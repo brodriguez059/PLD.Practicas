@@ -4,7 +4,7 @@ MAIN = main.tex
 all:
 	@echo "Compilando una vez"
 	latexmk -f -pdf $(MAIN)
-	@echo "Compiland por segunda vez"
+	@echo "Compilando por segunda vez"
 	latexmk -f -pdf $(MAIN)
 
 clean:
