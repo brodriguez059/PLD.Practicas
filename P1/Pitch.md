@@ -52,10 +52,11 @@ Explica qué te diferencia de tu competencia. ¿Por qué te deben elegir a ti y 
 0. Buenos días.
 1. Mi nombre es Baldwin Rodríguez, soy un ingeniero informático y desarrollador de videojuegos autónomo. Me apasionan los desafíos y soy una persona siempre en busca de nuevos objetivos.
 2. Ayudo a inversores como usted a hacer uso de sus fondos en proyectos interesantes y económicamente viables con mi experiencia en gestión de proyectos e ingeniería.
-3. Para ello estoy desarrolando un nuevo producto llamado "La Torre de los Errantes", un nuevo videojuego de acción y plataformas en el que usted compite contra sus amigos usando objetos mágicos, característica que diferencia al producto de otros juegos del mismo género. El jugador deberá atravesar de manera rápida un entorno generado proceduralmente, lleno de trampas y monstruos con el fin de llegar a la cima antes que cualquier otro y así destruir a su apresor y deshacer la maldición que lo atormenta.
-4. Con su inversión, generaré un producto que será rápidamente accesible al público y cuyo progreso le será informado constamente a través de documentos de seguimiento y control.
-5. Mi experiencia en desarrollo con metodologías ágiles me permite prometerle que conmigo estará bien informado y que siempre seremos capaces de ajustarnos a nuevas metas durante la ejecución del proyecto como equipo.
-6. Si me permite su información de contacto, podemos tener una cita para concretar detalles mañana mismo.
+3. Para ello estamos desarrolando un nuevo producto llamado "La Torre de los Errantes", un nuevo videojuego de acción y plataformas en el que usted compite contra sus amigos usando objetos mágicos, característica que diferencia al producto de otros juegos del mismo género. El jugador deberá atravesar de manera rápida un entorno generado proceduralmente, lleno de trampas y monstruos con el fin de llegar a la cima antes que cualquier otro y así destruir a su apresor y deshacer la maldición que lo atormenta.
+4. El juego será perfecto tanto para los que desean partidas cortas con amigos como aquellos que desean explorar un mundo de fantasía lleno de secretos.
+5. Con su inversión, generaremos un producto que será rápidamente accesible al público y cuyo progreso le será informado constamente a través de documentos de seguimiento y control.
+6. Mi experiencia en desarrollo con metodologías ágiles me permite prometerle que conmigo estará bien informado y que siempre seremos capaces de ajustarnos a nuevas metas durante la ejecución del proyecto como equipo.
+7. Si me permite su información de contacto, podemos tener una cita para concretar detalles mañana mismo.
 
 ## Examples
 
