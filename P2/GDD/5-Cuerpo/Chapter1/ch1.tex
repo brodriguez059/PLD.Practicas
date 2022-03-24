@@ -1,5 +1,12 @@
-\chapter{Design History}
-A design document is a continuously changing reference tool. Most of your teammates won't have time to read the whole document over and over again every time that a new version is released, so it is good to alert them to any significant modifications or updates that you have made. As you can see, each version will have its own section where you list the major changes made in that iteration. If you use a wiki, this section will be replaced by the editing history feature of the software. This makes it simple and effortless to track changes to the document and to backtrack changes if it becomes necessary.
+\chapter{Design History}\label{chap:design-history}
+A design document is a continuously changing reference tool. Most of your
+teammates won't have time to read the whole document over and over again every
+time that a new version is released, so it is good to alert them to any
+significant modifications or updates that you have made. As you can see, each
+version will have its own section where you list the major changes made in that
+iteration. If you use a wiki, this section will be replaced by the editing
+history feature of the software. This makes it simple and effortless to track
+changes to the document and to backtrack changes if it becomes necessary.
 
 % Here I recommend a table?
 %     1.1 Version 1.0
@@ -7,3 +14,60 @@ A design document is a continuously changing reference tool. Most of your teamma
 %         1.2.1 Version 2.1
 %         1.2.2 Version 2.2
 %     1.3 Version 3.0
+
+% P requiere del paquete ragged2e
+
+\begin{longtable}[H]{
+    @{}
+    >{\RaggedRight}p{\dimexpr0.12\textwidth-1\tabcolsep\relax}
+    P{\dimexpr0.88\textwidth-1\tabcolsep\relax}
+    @{}
+    }%
+
+    \toprule        % table caption, ref label
+    \textbf{Versión} & \multicolumn{1}{c}{\textbf{Descripción}}\\      % head first part of table
+    \midrule        % line head body
+    \endfirsthead   % Definition of 1. table header
+
+    \multicolumn{2}{c}{Continuación de la página anterior}\\
+    \toprule
+    \textbf{Versión} & \multicolumn{1}{c}{\textbf{Descripción}}\\      % head following parts of table
+    \midrule        % line head body
+    \endhead        % Delongtab1finition of all following headers
+
+    \midrule
+    \multicolumn{2}{c}{Continua en la siguiente página}\\ % footer 1. (and more) part(s) of table
+    \endfoot        % foots of the table without the last one
+
+    \bottomrule
+    \caption{Historial de cambios del informe \label{tab:design-history}}\\
+    \endlastfoot    % the last(!!) foot of the table
+
+    v0.0 & Iniciado el documento y generadas las secciones y capítulos \\
+    v0.1 & Especificados la descripción básica y el público objetivo \\
+    % v0.2 & \\
+    % v0.3 & \\
+    % v0.4 & \\
+    % v0.5 & \\
+    % v0.6 & \\
+    % v0.7 & \\
+    % v0.8 & \\
+    % v0.9 & \\
+    % v1.0 & \\
+    % v1.1 & \\
+    % v1.2 & \\
+    % v1.3 & \\
+    % v1.4 & \\
+    % v1.5 & \\
+    % v1.6 & \\
+    % v1.7 & \\
+    % v1.8 & \\
+    % v1.9 & \\
+    % v2.0 & \\
+    % v2.1 & \\
+    % v2.2 & \\
+    % v2.3 & \\
+    % v2.4 & \\
+    % v2.5 & \\
+    % v2.6 & \\
+\end{longtable}
