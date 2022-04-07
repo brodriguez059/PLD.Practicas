@@ -38,14 +38,14 @@ El único modo en el que no puede realizar esta acción es el modo partida.
 \subsubsection{Modo configuración de partida}
 \begin{itemize}
     \item Configurar datos de la partida
-    \item Entrar al menú de selección de personaje
+    \item Entrar al menú de selección de personaje (Crear partida)
     \item Volver al perfil
 \end{itemize}
 
 \subsubsection{Modo selección de personaje}
 \begin{itemize}
     \item Cambiar de personaje
-    \item Seleccionar personaje
+    \item Seleccionar personaje (Necesario para empezar partida)
     \item Volver al menú de configuración de partida
 \end{itemize}
 
@@ -60,8 +60,8 @@ El único modo en el que no puede realizar esta acción es el modo partida.
     \item Recolectar objeto
     \item Descartar objeto
     \item Interactuar con NPC
-    \item Comprar objeto
     \item Recolectar monedas
+    \item Comprar objeto
     \item Pausar
     \item Avanzar de nivel
 \end{itemize}
@@ -84,18 +84,30 @@ El único modo en el que no puede realizar esta acción es el modo partida.
 
 \subsubsection{Modo configuración}
 \begin{itemize}
-    \item Cambiar el volumen de sonido
+    \item Cambiar el volumen del audio
 \end{itemize}
 
 \subsection{Interacciones}
 % Lo que hacen los NPCs y monstruos
 
+% Las plataformas también son entidades y por tanto:
+% Colisionar
+% Moverse
+% Desaparecer
+% Rotar
+% Efecto especial?
 
 \subsection{Condiciones de victoria/puntuación} % 5.3.3 Scoring/winning conditions
 
 \change[inline]{Describe the scoring system and win conditions. These might be
 different for single player versus multiplayer or if you have several modes of
 competition.}
+\begin{itemize}
+    \item Llegar a la cima de la torre primero (condición de victoria)
+    \item Derrotar enemigos
+    \item Derrotar jefes
+    \item Impedir el progreso de otro jugador
+\end{itemize}
 
 \subsection{Reglas} %     5.3.2 Rules
 
@@ -103,89 +115,4 @@ competition.}
 game will be much easier. You will need to define all the game objects,
 concepts, their behaviors, and how they relate to one another in this section}
 
-\subsection{Interfaces} %     5.3.1 Interfaces
-
-\change[inline]{Create wireframes, as described on page 439, for every interface
-the artists will need to create. Each wireframe should include a description of
-how each interface feature functions. Make sure you detail out the various
-states for each interface.}
-
-\subsubsection{Modo menú principal}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I1.png} %
-    \caption{}
-    \label{fig:I1}
-\end{figure}
-
-\subsubsection{Modo selección de perfil}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I3.png} %
-    \caption{}
-    \label{fig:I3}
-\end{figure}
-
-\subsubsection{Modo perfil}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I4.png} %
-    \caption{}
-    \label{fig:I4}
-\end{figure}
-
-\subsubsection{Modo configuración de partida}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I10.png} %
-    \caption{}
-    \label{fig:I10}
-\end{figure}
-
-\subsubsection{Modo selección de personaje}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I5.png} %
-    \caption{}
-    \label{fig:I5}
-\end{figure}
-
-\subsubsection{Modo partida}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I6.png} %
-    \caption{}
-    \label{fig:I6}
-\end{figure}
-
-\subsubsection{Modo pausa}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I7.png} %
-    \caption{}
-    \label{fig:I7}
-\end{figure}
-
-\subsubsection{Modo victoria}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I9.png} %
-    \caption{}
-    \label{fig:I9}
-\end{figure}
-
-\subsubsection{Modo derrota}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I8.png} %
-    \caption{}
-    \label{fig:I8}
-\end{figure}
-
-\subsubsection{Modo configuración}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I2.png} %
-    \caption{}
-    \label{fig:I2}
-\end{figure}
+\input{5-Cuerpo/Chapter5/5.5.1.tex}
