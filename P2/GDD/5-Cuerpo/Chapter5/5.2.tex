@@ -1,37 +1,65 @@
 \section{Descripción del gameplay} % 5.2 Gameplay description
 
-% Aquí debes poner más cosas
-
 \change[inline]{Provide a detailed description of how the game functions.}
+
+% Aquí debes poner más cosas
+\urgent[inline]{NO OLVIDES REDACTAR ESTE PÁRRAFO. NO TE BASTA CON LA VISTA DEL
+JUGADOR}
 
 % En qué mundo/espacio se va a desarrolar el juego
 % Vista del jugador como párrafo nada más
+Al ser un juego 2D, la vista a la cual tendrá acceso al jugador será aquella que
+muestre una cámara que sigue al personaje seleccionado por éste en la partida.
+Por lo tanto, podemos decir que el jugador será capaz de ver un área alrededor
+del personaje y que a medida que éste se mueve, la cámara también lo seguirá.
 
 \subsection{Modelo de interacción}
 
 % ¿Cuál es tu modelo de interacción?
 
-% El jugador es un actor interno que interactua con el entorno a través de un personaje
-% El jugador tiene un perfil y selecciona un personaje cuando desea jugar una partida
-% El jugador puede mover el personaje dentro de una partida
-% El jugador puede atacar con el personaje dentro de una partida
-% El jugador puede usar las habilidade especiales asociadas al personaje
-% El jugador puede recolectar objetos especiales usando el personaje
-% El jugador puede hacer uso de botones para usar objetos mágicos
-% El jugador puede hacer uso de un botón de menú
+\begin{itemize}
+    \item El jugador es un actor que interactua con el entorno de una partida a
+    través de un personaje
+    \item El jugador tiene un perfil asignado con el cual puede empezar una
+    partida y seleccionar un personaje para jugar
+    \item El jugador puede mover el personaje dentro de una partida
+    \item El jugador puede colisionar con las plataformas de una partida
+    \item El jugador puede atacar a los enemigos de la partida a través del
+    personaje
+    \item El jugador puede usar las habilidades especiales asociadas al
+    personaje
+    \item El jugador puede recolectar objetos especiales usando el personaje
+    \item El jugador puede hacer uso de botones para usar objetos mágicos
+    \item El jugador puede hacer uso de un botón de menú para configurar el
+    juego
+\end{itemize}\improvement{Aquí faltan cosas}
 
 \subsection{Objetivos del jugador}
+El objetivo principal del jugador dentro de una partida es conseguir llegar a la
+cima de la torre antes que nadie, asegurándose de destruir a los enemigos y
+jefes necesarios para ello.
 
-% Completar el nivel (llegar a la cima de la torre)
-% Derrotar el mayor número de enemigos (especial para puntuación)
-% Recolectar objetos especiales para fastidiar a los compañeros
-% Completar el nivel antes que los demás jugadores
+Sin embargo, podemos litar otros sub-objetivos adicionales:
+\begin{itemize}
+    \item Derrotar el mayor número de enemigos y jefes
+    \item Recolectar objetos especiales para fastidiar el progreso de los demás
+    jugadores
+\end{itemize}\improvement{Aquí faltan cosas}
 
 \subsection{Retos del jugador}
 
-% Evitar que se pierda toda la vida
-% Evitar que se agote el tiempo para llegar a la cima de la torre
-% Evitar que los otros jugadores fastidien su progreso
-% Evitar quedarse atascado en las plataformas
-% Planificar cuándo usar los objetos mágicos
-% Planificar cuándo usar las habilidades especiales
+Los retos a los que tiene que someterse el jugador están todos relacionados con
+los objetivos del juego:
+\begin{itemize}
+    \item Evitar perder toda la vida durante la partida
+    \item Evitar que los demás jugadores fastidien su progreso con los objetos
+    mágique han recolectado y usado
+    \item Evitar quedarse atascado en las plataformas del nivel
+    \item Planificar cuándo y cómo moverse por las plataformas del nivel para
+    avanzar rápidamente
+    \item Evitar que se agote el tiempo que tiene para llegar a la cima de la
+    torre
+    \item Planificar cuándo usar los objetos mágicos recolectados
+    \item Planificar cuándo usar las habilidades especiales del personaje
+    \item Planificar cuándo y cómo usar el dinero ganado en la partida
+\end{itemize}

@@ -1,27 +1,78 @@
 \section{Modos y otras funcionalidades} % 5.4 Modes and other features
 
-\change[inline]{If your game has different modes of play, such as single and
-multiplayer modes, or other features that will affect the implementation of the
-gameplay, you will need to describe them here.}
+% \change[inline]{If your game has different modes of play, such as single and
+% multiplayer modes, or other features that will affect the implementation of the
+% gameplay, you will need to describe them here.}
 
 \subsection{Modos}
+Se definirán los modos del juego en función de la principal funcionalidad que
+cumplen estos. Por tanto, la lista de modos que se tienen es:
+
 \begin{itemize}
-    \item Modo menú principal
-    \item Modo selección de perfil
-    \item Modo configuración de perfil
-    \item Modo configuración de partida
-    \item Modo selección de personaje
-    \item Modos partida (singleplayer y multiplayer)
-        % Singleplayer: Obligatorio para poder jugar con bots
-        % Multiplayer: Para jugar con más personas
-    \item Modo pausa
-    \item Modo ganar
-    \item Modo perder
+    \item \textbf{Modo menú principal}: Al iniciar el juego se mostrará la
+    pantalla de inicio que contendrá el menú principal y desde la cual se podrá
+    acceder al selector de perfil.
+
+    \item \textbf{Modo selección de perfil}: Dentro del menú de selección de
+    perfil, el jugador podrá escoger su perfil para empezar una partida,
+    eliminar un perfil ya creado o añadir uno nuevo. Desde este modo se puede
+    acceder de nuevo al menú principal y al menú de configuración de perfil.
+
+    \item \textbf{Modo perfil}: Este modo le permitirá al jugador ver
+    información de su perfil, configurar elementos como el nombre del perfil o
+    acceder al menú de configuración de nueva partida.
+
+    \item \textbf{Modo configuración de partida}: Al seleccionar el
+    perfil, el jugador podrá escoger empezar una nueva partida en la cual jugará
+    contra bots u contra otros jugadores según su preferencia. Además, podrá
+    configurar la información de la partida desde aquí antes de empezar. Se
+    podrá acceder al menú de selección de personaje o volver al modo perfil.
+    % Singleplayer: Obligatorio para poder jugar con bots
+    % Multiplayer: Para jugar con más personas
+
+    \item \textbf{Modo selección de personaje}: Después de crear una partida,
+    pero antes de empezarla, el jugador deberá escoger un personaje con el cual
+    jugar. Desde este modo se podrán ver los distintos personajes, sus
+    habilidades y otras características. Además, desde éste se podrá acceder al
+    modo de partida o volver al modo de configuración de partida.
+
+    \item \textbf{Modo partida}: El modo principal del juego en el cual ocurrirá
+    todo el gameplay como tal. En éste el jugador podrá controlar su personaje,
+    utilizar objetos, derrotar enemigos, competir contra otros jugadores, entre
+    otros. Desde éste se puede acceder al modo victoria, modo derrota y modo
+    pausa.
+
+    \item \textbf{Modo pausa}: Para que el jugador pueda abandonar una partida o
+    entrar al modo de configuración general, deberá primero entrar al modo
+    pausa. A pesar de su nombre, este modo no congelará la partida, simplemente
+    le permitirá al jugador acceder a las funcionalidades mencionadas
+    anteriormente. Desde él se puede abandonar la partida (haciendo que el juego
+    considere la partida como perdida) o entrar en el modo de configuración
+    general.
+
+    \item \textbf{Modo victoria}: Si el jugador cumple las condiciones de
+    victoria dentro del modo partida, se le llevará al modo de victoria. Desde
+    éste podrá volver al modo configuración de perfil.
+
+    \item \textbf{Modo derrota}: Si el jugador no cumple con las condiciones de
+    victoria, se le llevará al modo derrota. Desde éste podrá volver al modo
+    configuración de perfil.
+
+    \item \textbf{Modo configuración general}: También considerado como el
+    menú de configuración general, en éste se podrá configurar el volumen de
+    los sonidos y la música, además de otras configuraciones. Se podrá a acceder
+    a él desde los demás modos.
 \end{itemize}
 
 % \subsection{Funcionalidades}
 
 \subsection{Recursos}
 
-% Monedas
-% Objetos
+\begin{itemize}
+    \item \textbf{Monedas}: Durante una partida, el jugador podrá ganar monedas
+    ya sea recolectándolas en los niveles o derrotando enemigos y jefes. Éstas
+    permitirán comprar objetos mágicos a los distintos vendedores que se podrá
+    encontrar en el juego, pero dicho recurso será independiente entre partidas
+    y se reiniciará cada vez que se inicie una nueva.
+\end{itemize}
+\change[inline]{¿Son la vida y el maná recursos?}

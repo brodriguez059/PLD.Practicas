@@ -1,14 +1,117 @@
 \section{Descripción de entidades}
 
-% \subsection{Entidades}
+\change[inline]{La descripción de entidades consiste en el listado de atributos
+y característica de cada entidad del juego (no tienen que ser necesariamente un
+jugador o un enemigo).}
 
-% Perfil
-% Level (partida)
-% Character
-% Monster (passive & hostile)
-% Boss
-% Magical Object (two divisions: passive & active, positive & negative)
-% Special ability (the character's abilities)
-% Vendors
+\subsection{Perfil}
+\begin{itemize}
+    \item ProfileName
+    \item Estadísticas \improvement{Expandir aquí el tipo de estadísticas}
+\end{itemize}
 
-% \subsection{State diagrams}
+\subsection{Partida}
+\begin{itemize}
+    \item Hostility level
+    \item Playermode (Multiplayer|Singleplayer)
+\end{itemize}
+
+\subsection{Nivel}
+\begin{itemize}
+    \item Startdoor
+    \item Finishdoor
+    \item CoinPositions
+    \item Platforms
+    \item Monsters
+    \item Objects
+    \item Vendors
+\end{itemize}
+
+\subsection{Personaje}
+\begin{itemize}
+    \item Type (Barbarian, Archer, Rogue, Mage)
+    \item MaxHealth
+    \item MaxMana
+    \item Mana
+    \item MaxMovementSpeed
+    \item MovementSpeed
+    \item MaxDefense
+    \item Defense
+    \item MaxPower
+    \item Power
+    \item AttackSpeed
+    \item AbilityCooldown
+    \item ViewRadius
+    \item InitialCoins
+    \item Paused
+    \item Coins
+\end{itemize}
+
+\subsection{Monstruo}
+\begin{itemize}
+    \item Type
+    \item Behaviour (passive/hostile)
+    \item MaxHealth
+    \item Health
+    \item MaxMana
+    \item Mana
+    \item MaxMovementSpeed
+    \item MovementSpeed
+    \item MaxDefense
+    \item Defense
+    \item MaxPower
+    \item Power
+    \item AttackSpeed
+    \item AggroRadius
+    \item IA
+\end{itemize}
+
+\subsection{Jefe}\improvement{Esta entidad comparte todo con Monstruo, se pueden
+fusionar en una sóla llamada "enemigo" y controlar con una variable si son
+bosses o no}
+
+\begin{itemize}
+    \item Type
+    \item Behaviour (passive/hostile)
+    \item MaxHealth
+    \item Health
+    \item MaxMana
+    \item Mana
+    \item MaxMovementSpeed
+    \item MovementSpeed
+    \item MaxDefense
+    \item Defense
+    \item MaxPower
+    \item Power
+    \item IA
+\end{itemize}
+
+\subsection{Objeto mágico}
+\begin{itemize}
+    \item BehaviourType (passive/active)
+    \item EffectType (positive/negative)
+    \item Price
+    \item ManaCost
+    \item AssociatedEffect
+\end{itemize}
+
+\subsection{Habilidad especial}
+\begin{itemize}
+    \item Type (Attack, Movement)
+    \item MaxCooldown
+    \item Cooldown
+    \item ManaCost
+    \item AssociatedEffect
+\end{itemize}
+
+\subsection{Comerciante}
+\begin{itemize}
+    \item Type/Name
+    \item Behaviour (passive/hostile)
+    \item Health
+    \item Mana
+    \item MovementSpeed
+    \item Defense
+    \item Power
+    \item Objects
+\end{itemize}
