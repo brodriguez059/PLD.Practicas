@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg1860"
+   sodipodi:docname="uipack_rpg_vector.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1862"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="true"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="37.034718"
+     inkscape:cy="34.294679"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1860">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2542" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1360" />
+  <g
+     id="g2803"
+     transform="scale(0.55489883)"
+     inkscape:export-filename="/home/bal/Desktop/LifeBar.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300"
+     inkscape:label="Life">
+    <g
+       id="g2566"
+       transform="matrix(1.0801039,0,0,1,61.310024,0)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBar.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         stroke="none"
+         fill="#cd5d12"
+         d="m 87,16 h 0.15 0.15 Q 89.95,15.9 91.95,13.95 94,11.9 94,9 L 93.9,8 Q 93.65,5.75 92,4.05 L 91.95,4 Q 89.95,2.1 87.3,2 H 87.15 87 V 0 h 0.15 0.15 q 3.45,0.1 6,2.55 L 93.45,2.7 Q 95.65,5 95.95,8 L 96,9 q 0,3.7 -2.6,6.35 H 93.35 Q 90.8,17.95 87.3,18 H 87.15 87 v -2"
+         id="path1362" />
+      <path
+         stroke="none"
+         fill="#fa8132"
+         d="m 87,16 v -2 h 0.15 0.15 Q 89.15,13.9 90.55,12.5 92,11.05 92,9 L 91.9,8 H 87 V 2 h 0.15 0.15 q 2.65,0.1 4.65,2 L 92,4.05 Q 93.65,5.75 93.9,8 L 94,9 q 0,2.9 -2.05,4.95 -2,1.95 -4.65,2.05 H 87.15 87"
+         id="path1364" />
+      <path
+         stroke="none"
+         fill="#e86a17"
+         d="m 87,8 h 4.9 L 92,9 q 0,2.05 -1.45,3.5 -1.4,1.4 -3.25,1.5 H 87.15 87 V 8"
+         id="path1366" />
+    </g>
+    <g
+       id="g2561"
+       transform="matrix(8.1666668,0,0,1,-309.50001,0)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBar.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         stroke="none"
+         fill="#e86a17"
+         d="M 39,14 V 8 h 18 v 6 H 39"
+         id="path1368" />
+      <path
+         stroke="none"
+         fill="#cd5d12"
+         d="M 39,2 V 0 H 57 V 2 H 39 m 18,14 v 2 H 39 v -2 h 18"
+         id="path1370" />
+      <path
+         stroke="none"
+         fill="#fa8132"
+         d="M 57,16 H 39 v -2 h 18 v 2 M 57,8 H 39 V 2 h 18 v 6"
+         id="path1372" />
+    </g>
+    <g
+       id="g2556"
+       inkscape:export-filename="/home/bal/Desktop/LifeBar.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="scale(1.049795,1)">
+      <path
+         stroke="none"
+         fill="#cd5d12"
+         d="m 9,16 v 2 H 8.85 8.7 Q 5.2,17.95 2.65,15.35 H 2.6 Q 0,12.7 0,9 L 0.05,8 Q 0.35,5 2.55,2.7 L 2.7,2.55 Q 5.25,0.1 8.7,0 H 8.85 9 V 2 H 8.85 8.7 Q 6.05,2.1 4.05,4 L 4,4.05 Q 2.35,5.75 2.1,8 L 2,9 q 0,2.9 2.05,4.95 2,1.95 4.65,2.05 H 8.85 9"
+         id="path1374" />
+      <path
+         stroke="none"
+         fill="#fa8132"
+         d="M 9,16 H 8.85 8.7 Q 6.05,15.9 4.05,13.95 2,11.9 2,9 L 2.1,8 Q 2.35,5.75 4,4.05 L 4.05,4 Q 6.05,2.1 8.7,2 H 8.85 9 V 8 H 4.1 L 4,9 q 0,2.05 1.45,3.5 1.4,1.4 3.25,1.5 H 8.85 9 v 2"
+         id="path1376" />
+      <path
+         stroke="none"
+         fill="#e86a17"
+         d="m 9,8 v 6 H 8.85 8.7 Q 6.85,13.9 5.45,12.5 4,11.05 4,9 L 4.1,8 H 9"
+         id="path1378" />
+    </g>
+  </g>
+  <g
+     id="g4109"
+     style="display:inline"
+     inkscape:label="Mana"
+     inkscape:export-filename="/home/bal/Desktop/ManaBar.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300">
+    <g
+       id="g3155"
+       transform="matrix(0.32568584,0,0,0.32568584,0.09176992,16.206482)">
+      <path
+         stroke="none"
+         fill="#1989b8"
+         d="m 12,43 v 2 H 11.85 11.7 Q 8.2,44.95 5.65,42.35 H 5.6 Q 3,39.7 3,36 l 0.05,-1 q 0.3,-3 2.5,-5.3 L 5.7,29.55 Q 8.25,27.1 11.7,27 H 11.85 12 v 2 H 11.85 11.7 Q 9.05,29.1 7.05,31 L 7,31.05 Q 5.35,32.75 5.1,35 L 5,36 q 0,2.9 2.05,4.95 2,1.95 4.65,2.05 H 11.85 12"
+         id="path1380" />
+      <path
+         stroke="none"
+         fill="#35baf3"
+         d="M 12,43 H 11.85 11.7 Q 9.05,42.9 7.05,40.95 5,38.9 5,36 L 5.1,35 Q 5.35,32.75 7,31.05 L 7.05,31 q 2,-1.9 4.65,-2 H 11.85 12 v 6 H 7.1 L 7,36 q 0,2.05 1.45,3.5 1.4,1.4 3.25,1.5 H 11.85 12 v 2"
+         id="path1382" />
+      <path
+         stroke="none"
+         fill="#1ea7e1"
+         d="m 12,35 v 6 H 11.85 11.7 Q 9.85,40.9 8.45,39.5 7,38.05 7,36 L 7.1,35 H 12"
+         id="path1384" />
+    </g>
+    <g
+       id="g3160"
+       transform="matrix(4.1204902,0,0,0.32568584,-169.06059,16.206482)">
+      <path
+         stroke="none"
+         fill="#35baf3"
+         d="m 60,29 v 6 H 42 v -6 h 18 m 0,12 v 2 H 42 v -2 h 18"
+         id="path1386" />
+      <path
+         stroke="none"
+         fill="#1989b8"
+         d="M 60,29 H 42 v -2 h 18 v 2 m 0,14 v 2 H 42 v -2 h 18"
+         id="path1388" />
+      <path
+         stroke="none"
+         fill="#1ea7e1"
+         d="m 42,35 h 18 v 6 H 42 v -6"
+         id="path1390" />
+    </g>
+    <g
+       id="g3165"
+       transform="matrix(0.32568584,0,0,0.32568584,48.688274,16.206482)">
+      <path
+         stroke="none"
+         fill="#35baf3"
+         d="m 90,41 h 0.15 0.15 Q 92.15,40.9 93.55,39.5 95,38.05 95,36 L 94.9,35 H 90 v -6 h 0.15 0.15 q 2.65,0.1 4.65,2 L 95,31.05 q 1.65,1.7 1.9,3.95 l 0.1,1 q 0,2.9 -2.05,4.95 -2,1.95 -4.65,2.05 H 90.15 90 v -2"
+         id="path1392" />
+      <path
+         stroke="none"
+         fill="#1ea7e1"
+         d="m 90,41 v -6 h 4.9 l 0.1,1 q 0,2.05 -1.45,3.5 -1.4,1.4 -3.25,1.5 H 90.15 90"
+         id="path1394" />
+      <path
+         stroke="none"
+         fill="#1989b8"
+         d="m 90,43 h 0.15 0.15 Q 92.95,42.9 94.95,40.95 97,38.9 97,36 L 96.9,35 Q 96.65,32.75 95,31.05 L 94.95,31 q -2,-1.9 -4.65,-2 H 90.15 90 v -2 h 0.15 0.15 q 3.45,0.1 6,2.55 l 0.15,0.15 q 2.2,2.3 2.5,5.3 L 99,36 q 0,3.7 -2.6,6.35 H 96.35 Q 93.8,44.95 90.3,45 H 90.15 90 v -2"
+         id="path1396" />
+    </g>
+  </g>
+  <g
+     id="g2986"
+     transform="matrix(0.55418721,0,0,0.55418721,0.01231317,-1.83005)"
+     inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300"
+     style="display:inline"
+     inkscape:label="LifeBkg">
+    <g
+       id="g2617"
+       transform="translate(109)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="m 47,27 v -2 h 0.15 0.15 q 3.45,0.1 6,2.55 l 0.15,0.15 q 2.2,2.3 2.5,5.3 l 0.05,1 -0.05,1 q -0.3,-3 -2.5,-5.3 L 53.3,29.55 Q 50.75,27.1 47.3,27 H 47.15 47"
+         id="path1434" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="m 47,27 h 0.15 0.15 q 3.45,0.1 6,2.55 l 0.15,0.15 q 2.2,2.3 2.5,5.3 -0.3,3.05 -2.55,5.35 H 53.35 Q 50.8,42.95 47.3,43 H 47.15 47 V 27"
+         id="path1436" />
+    </g>
+    <g
+       id="g2613"
+       transform="matrix(8.1666665,0,0,1,-146.16666,0)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="m 19,27 v -2 h 18 v 2 H 19"
+         id="path1438" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="M 19,27 H 37 V 43 H 19 V 27"
+         id="path1440" />
+    </g>
+    <g
+       id="g2609"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="M 9,27 H 8.85 8.7 q -3.45,0.1 -6,2.55 L 2.55,29.7 Q 0.35,32 0.05,35 L 0,34 0.05,33 q 0.3,-3 2.5,-5.3 L 2.7,27.55 Q 5.25,25.1 8.7,25 H 8.85 9 v 2"
+         id="path1442" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="M 9,27 V 43 H 8.85 8.7 Q 5.2,42.95 2.65,40.35 H 2.6 Q 0.35,38.05 0.05,35 0.35,32 2.55,29.7 L 2.7,29.55 Q 5.25,27.1 8.7,27 H 8.85 9"
+         id="path1444" />
+    </g>
+  </g>
+  <g
+     id="g4120"
+     transform="translate(-6.9999999e-7,8.3469393)"
+     inkscape:label="ManaBkg"
+     inkscape:export-filename="/home/bal/Desktop/ManaBarBkg.png"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300">
+    <g
+       id="g2617-6"
+       transform="matrix(0.3257329,0,0,0.3257329,62.690554,16.856677)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       style="display:inline">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="m 47,27 v -2 h 0.15 0.15 q 3.45,0.1 6,2.55 l 0.15,0.15 q 2.2,2.3 2.5,5.3 l 0.05,1 -0.05,1 q -0.3,-3 -2.5,-5.3 L 53.3,29.55 Q 50.75,27.1 47.3,27 H 47.15 47"
+         id="path1434-7" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="m 47,27 h 0.15 0.15 q 3.45,0.1 6,2.55 l 0.15,0.15 q 2.2,2.3 2.5,5.3 -0.3,3.05 -2.55,5.35 H 53.35 Q 50.8,42.95 47.3,43 H 47.15 47 V 27"
+         id="path1436-5" />
+    </g>
+    <g
+       id="g2613-3"
+       transform="matrix(4.1111111,0,0,0.32653062,-74.11111,16.836734)"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       style="display:inline">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="m 19,27 v -2 h 18 v 2 H 19"
+         id="path1438-5" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="M 19,27 H 37 V 43 H 19 V 27"
+         id="path1440-6" />
+    </g>
+    <g
+       id="g2609-2"
+       inkscape:export-filename="/home/bal/Desktop/LifeBarBkg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="matrix(0.32573293,0,0,0.32573293,1.0684036,16.856676)"
+       style="display:inline">
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.2"
+         d="M 9,27 H 8.85 8.7 q -3.45,0.1 -6,2.55 L 2.55,29.7 Q 0.35,32 0.05,35 L 0,34 0.05,33 q 0.3,-3 2.5,-5.3 L 2.7,27.55 Q 5.25,25.1 8.7,25 H 8.85 9 v 2"
+         id="path1442-9" />
+      <path
+         stroke="none"
+         fill="#000000"
+         fill-opacity="0.101961"
+         d="M 9,27 V 43 H 8.85 8.7 Q 5.2,42.95 2.65,40.35 H 2.6 Q 0.35,38.05 0.05,35 0.35,32 2.55,29.7 L 2.7,29.55 Q 5.25,27.1 8.7,27 H 8.85 9"
+         id="path1444-1" />
+    </g>
+  </g>
+</svg>
