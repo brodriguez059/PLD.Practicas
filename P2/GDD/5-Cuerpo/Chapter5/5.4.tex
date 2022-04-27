@@ -5,13 +5,18 @@
 % gameplay, you will need to describe them here.}
 
 \subsection{Modos}
-\improvement[inline]{Separar los modos de juego de los modos de funcionalidad.
-Definimos como modo de juego a aquellos “modos” a los cuales podrá acceder y
-entender el jugador, mientras que un modo de funcionalidad es aquella agrupación
-de funcionalidades caracterizadas por una interfaz distinta}
 
-Se definirán los modos del juego en función de la principal funcionalidad que
-cumplen estos. Por tanto, la lista de modos que se tienen es:
+\subsubsection{Modos de juego}
+Los modos de juego del proyecto se definen en función del tipo de entidad contra la cual quiere competir el jugador. Se tienen entonces dos:
+
+\begin{itemize}
+    \item \textbf{Singleplayer}: El modo de juego de un sólo jugador será idéntico al modo de juego multijugador, pero los contrincantes de la partida serán todos bots. Además, es en este modo que se puede encontrar el final secreto del juego.
+    \item \textbf{Multiplayer}: El modo de juego multijugador contendrá el gameplay descrito hasta ahora. Se competirá contra otros jugadores, se utilizarán los objetos mágicos y las habilidades para fastidiar a los contrincantes, etc.
+\end{itemize}
+
+\subsubsection{Grupos de interacción}
+
+A la hora de implementar, sin embargo, se tendrá una serie de modos o grupos de interacción que definirán el flujo de eventos de la aplicación de cara a empezar la partida. Estos modos están definidos según la principal funcionalidad que cumplen y la lista de éstos es:
 
 \begin{itemize}
     \item \textbf{Modo menú principal}: Al iniciar el juego se mostrará la
@@ -79,5 +84,6 @@ cumplen estos. Por tanto, la lista de modos que se tienen es:
     permitirán comprar objetos mágicos a los distintos vendedores que se podrá
     encontrar en el juego, pero dicho recurso será independiente entre partidas
     y se reiniciará cada vez que se inicie una nueva.
+    \item \textbf{Vida}: El personaje del jugador tendrá una vida asignada que deberá procurar no perder completamente. Una vez que la vida se reduzca a cero, el jugador perderá la partida.
+    \item \textbf{Maná}: El personaje del jugador tendrá una cantidad de maná asignado que se recuperará con el tiempo. Este recurso será usado para activar las habilidades del personaje seleccionado.
 \end{itemize}
-\change[inline]{¿Son la vida y el maná recursos?}
