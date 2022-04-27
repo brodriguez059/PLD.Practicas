@@ -94,12 +94,24 @@ states for each interface.}
     \label{fig:Interface_Seleccion_Personaje}
 \end{figure}
 \begin{enumerate}\setcounter{enumi}{16}
-    \item \textbf{Vista del personaje}:
-    \item \textbf{Botones de cambio de personaje}:
-    \item \textbf{Clase del personaje}:
-    \item \textbf{Habilidad del personaje}:
-    \item \textbf{Información adicional sobre el personaje}:
-    \item \textbf{Botón de selección}:
+    \item \textbf{Vista del personaje}: Para facilitar la selección del
+    personaje, se muestra en una ventana la forma y la estética de los
+    personajes.
+    \item \textbf{Botones de cambio de personaje}: El personaje actualmente
+    visibile en la ventana de vista del personaje será el escogido para la
+    partida, por tanto se necesitan estos botones para cambiar el personaje. Una
+    vez llegado al último personaje o al primero, avanzar o retroceder
+    respectivamente simplemente ciclará sobre la lista de personajes.
+    \item \textbf{Clase del personaje}: Se mostrará también la clase del
+    personaje.
+    \item \textbf{Habilidad del personaje}: Cada personaje tendrá dos
+    habilidades especiales que podrán verse desde estas ventanas para facilitar
+    la selección del jugador.
+    \item \textbf{Información adicional sobre el personaje}: Adicionalmente se
+    mostrarán las diferencias que tiene el personaje en cuanto a estadísticas y
+    valores internos en comparación a los demás.
+    \item \textbf{Botón de selección}: Una vez decidido el personaje con el que
+    se quiere jugar, se pulsará este botón para empezar la partida.
 \end{enumerate}
 
 \subsubsection{Modo partida}
@@ -110,14 +122,27 @@ states for each interface.}
     \label{fig:Interface_Partida}
 \end{figure}
 \begin{enumerate}\setcounter{enumi}{22}
-    \item \textbf{Barra de vida}:
-    \item \textbf{Barra de mana}:
-    \item \textbf{Puerta de entrada}:
-    \item \textbf{Objeto mágico}:
-    \item \textbf{Botón de pausa}:
-    \item \textbf{Enemigo}:
-    \item \textbf{Habilidad especial}:
-    \item \textbf{Personaje}:
+    \item \textbf{Barra de vida}: La cantidad de vida o salud del personaje
+    durante una partida se mostrará en esta barra, además de la cantidad máxima
+    de vida que puede tener.
+    \item \textbf{Barra de mana}: Así como con la barra de vida, esta barra
+    muestra la cantidad de maná o magia que posee el personaje junto con su
+    valor máximo.
+    \item \textbf{Puerta}: Un personaje siempre empieza en una puerta
+    de entrada y su objetivo es encontrar la puerta de salida del nivel lo antes
+    posible.
+    \item \textbf{Objeto mágico}: Cuando se recolecte un objeto mágico, se podrá
+    ver éste en este espacio. Para usarlo bastará con pulsar sobre su imagen.
+    \item \textbf{Botón de pausa}: Para poder entrar en el modo pausa durante la
+    partida, se utilizará este botón.
+    \item \textbf{Enemigo}: El personaje deberá enfrentarse a distintos enemigos
+    durante los niveles.
+    \item \textbf{Habilidad especial}: Cada personaje posee dos habilidades
+    especiales que puede utilizar durante la partida. Para hacer uso de ellas
+    deberá pulsar en su espacio respectivo después de haber esperado un tiempo
+    de \emph{enfriamiento} o \emph{cooldown}.
+    \item \textbf{Personaje}: El personaje seleccionado en el menú anterior será
+    aquel que controlará el jugador durante la partida.
 \end{enumerate}
 
 \subsubsection{Modo pausa}
@@ -128,10 +153,14 @@ states for each interface.}
     \label{fig:Interface_Pausa}
 \end{figure}
 \begin{enumerate}\setcounter{enumi}{30}
-    \item \textbf{Nombre del menú}:
-    \item \textbf{Botón continuar}:
-    \item \textbf{Botón de configuración}:
-    \item \textbf{Botón abandonar}:
+    \item \textbf{Nombre del menú}: Se mostrará el nombre del menú que aparece
+    en la partida.
+    \item \textbf{Botón continuar}: Al pulsar este botón se saldrá del menú de
+    pausa y se volverá a la partida.
+    \item \textbf{Botón de configuración}: Al pulsar este botón se irá al menú
+    de configuración general.
+    \item \textbf{Botón abandonar}: Al pulsar este botón se abandonará la
+    partida y se dará por perdida.
 \end{enumerate}
 
 \subsubsection{Modo victoria}
@@ -142,13 +171,14 @@ states for each interface.}
     \label{fig:Interface_Victoria}
 \end{figure}
 \begin{enumerate}\setcounter{enumi}{34}
-    \item \textbf{Botón de salida}:
+    \item \textbf{Botón de salida}: La única posibilidad en el modo de victoria
+    o derrota es salir de la partida al modo perfil.
 \end{enumerate}
 
 \subsubsection{Modo derrota}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{5-Cuerpo/Chapter5/I9.png} %
+    \includegraphics[width=0.5\textwidth]{5-Cuerpo/Chapter5/I9.png} %
     \caption{Interfaz del menú de derrota}
     \label{fig:Interface_Derrota}
 \end{figure}
@@ -162,8 +192,12 @@ states for each interface.}
     \label{fig:Interface_Configuracion_General}
 \end{figure}
 \begin{enumerate}\setcounter{enumi}{35}
-    \item \textbf{Nombre de sección de configuración}:
-    \item \textbf{Volumen de la música}:
-    \item \textbf{Volumen de los sonidos}:
-    \item \textbf{Barras de control de volumen}:
+    \item \textbf{Nombre de sección de configuración}: Dentro de la
+    configuración general se tendrá una serie de configuraciones que se podrán
+    agrupar en distintas categorías.
+    \item \textbf{Volumen de la música}: El control del volumen de la música.
+    \item \textbf{Volumen de los sonidos}: El control del volumen de los efectos
+    de sonido.
+    \item \textbf{Barras de control de volumen}: Las barras que controlan como
+    tal el volumen del sonido del juego.
 \end{enumerate}
