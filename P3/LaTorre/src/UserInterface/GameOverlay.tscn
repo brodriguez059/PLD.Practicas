@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/art/ui/button/BttnPause.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterHealth.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterHealthBackground.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterMana.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterManaBackground.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnPausePressed.png" type="Texture" id=6]
+[ext_resource path="res://src/UserInterface/CoinsCounter.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=8]
+[ext_resource path="res://assets/art/ui/panel/PanelStone.png" type="Texture" id=9]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Resources" type="NinePatchRect" parent="."]
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 128.0
+margin_bottom = 160.0
+
+[node name="Bars" type="VBoxContainer" parent="Resources"]
+anchor_right = 1.0
+margin_bottom = 84.0
+
+[node name="HealthBar" type="TextureProgress" parent="Resources/Bars"]
+margin_right = 363.0
+margin_bottom = 40.0
+texture_under = ExtResource( 3 )
+texture_over = ExtResource( 2 )
+
+[node name="ManaBar" type="TextureProgress" parent="Resources/Bars"]
+margin_top = 44.0
+margin_right = 363.0
+margin_bottom = 84.0
+texture_under = ExtResource( 5 )
+texture_over = ExtResource( 4 )
+
+[node name="CoinsCounter" parent="Resources" instance=ExtResource( 7 )]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0
+margin_top = -45.0
+margin_bottom = 0.0
+script = null
+
+[node name="Pause" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -88.0
+margin_top = 24.0
+margin_right = -24.0
+margin_bottom = 94.0
+
+[node name="TextureButton" type="TextureButton" parent="Pause"]
+anchor_bottom = 0.342857
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 6 )
+
+[node name="Objects" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 24.0
+margin_top = -124.0
+margin_right = 216.0
+margin_bottom = -24.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Objects"]
+margin_right = 192.0
+margin_bottom = 100.0
+texture = ExtResource( 8 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="Abilities" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -124.0
+margin_right = -24.0
+margin_bottom = -24.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Abilities"]
+margin_right = 192.0
+margin_bottom = 100.0
+texture = ExtResource( 9 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
