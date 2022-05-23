@@ -1,25 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://src/UserInterface/Menus/ProfileSelection.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/UserInterface/Menus/ConfigureGame.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/UserInterface/GameOverlay.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/UserInterface/Menus/ProfileView.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/UserInterface/Menus/CharacterSelection.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UserInterface/Menus/MainTitle.tscn" type="PackedScene" id=1]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ProfileSelection" parent="CanvasLayer" instance=ExtResource( 1 )]
-visible = false
-
-[node name="ProfileView" parent="CanvasLayer" instance=ExtResource( 4 )]
-visible = false
-
-[node name="CharacterSelection" parent="CanvasLayer" instance=ExtResource( 5 )]
-visible = false
-
-[node name="ConfigureGame" parent="CanvasLayer" instance=ExtResource( 2 )]
-visible = false
-
-[node name="Control" parent="CanvasLayer" instance=ExtResource( 3 )]
+[node name="MainTitle" parent="CanvasLayer" instance=ExtResource( 1 )]

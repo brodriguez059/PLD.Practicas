@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=1]
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=2]
@@ -10,10 +10,12 @@
 [ext_resource path="res://assets/art/ui/panel/PanelWood.png" type="Texture" id=8]
 [ext_resource path="res://assets/art/ui/button/BttnJugarPressed.png" type="Texture" id=9]
 [ext_resource path="res://assets/art/ui/panel/PanelMarbleFlat.png" type="Texture" id=10]
+[ext_resource path="res://src/UserInterface/Menus/ProfileView.gd" type="Script" id=11]
 
 [node name="ProfileView" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 11 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_left = 0.5
@@ -93,7 +95,13 @@ patch_margin_top = 50
 patch_margin_right = 96
 patch_margin_bottom = 50
 
-[node name="Stats" type="GridContainer" parent="NinePatchRect/NinePatchRect/VBoxContainer/ProfileStats"]
+[node name="VScrollBar" type="VScrollBar" parent="NinePatchRect/NinePatchRect/VBoxContainer/ProfileStats"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -12.0
+
+[node name="Stats" type="GridContainer" parent="NinePatchRect/NinePatchRect/VBoxContainer/ProfileStats/VScrollBar"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 columns = 2
@@ -128,3 +136,7 @@ margin_right = 776.0
 margin_bottom = 64.0
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 2 )
+
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnRegresar" to="." method="_on_BttnRegresar_pressed"]
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnJugar" to="." method="_on_BttnJugar_pressed"]
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]

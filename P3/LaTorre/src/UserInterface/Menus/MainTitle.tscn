@@ -73,9 +73,6 @@ margin_bottom = 200.0
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 
-[node name="Tween" type="Tween" parent="."]
-
 [connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnInicio" to="." method="_on_BttnInicio_pressed"]
 [connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]
 [connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnSalir" to="." method="_on_BttnSalir_pressed"]
-[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_tween_all_completed"]

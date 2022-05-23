@@ -38,6 +38,16 @@ _global_script_classes=[ {
 "class": "Player",
 "language": "GDScript",
 "path": "res://src/Actors/Player.gd"
+}, {
+"base": "Resource",
+"class": "Profile_Data",
+"language": "GDScript",
+"path": "res://src/Actors/Profile_Data.gd"
+}, {
+"base": "NinePatchRect",
+"class": "SaveButton",
+"language": "GDScript",
+"path": "res://src/UserInterface/SaveButton.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
@@ -45,7 +55,9 @@ _global_script_class_icons={
 "Coin": "",
 "Enemy": "",
 "Gun": "",
-"Player": ""
+"Player": "",
+"Profile_Data": "",
+"SaveButton": ""
 }
 
 [application]
@@ -54,13 +66,19 @@ config/name="La Torre de los Errantes"
 run/main_scene="res://src/UserInterface/Menus/Test.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://src/Autoload/Global.gd"
+
 [display]
 
 window/vsync/use_vsync=false
+mouse_cursor/custom_image="res://assets/art/ui/Cursor.png"
 
 [global]
 
 layers=false
+Mouse=false
 
 [input]
 
