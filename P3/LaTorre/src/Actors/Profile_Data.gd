@@ -1,7 +1,6 @@
 extends Resource
 class_name Profile_Data
 
-export(int) var index = 0
 export(String) var profile_name = ""
 export(int) var number_of_plays = 0
 export(int) var number_of_wins = 0

@@ -23,8 +23,8 @@ func _on_BttnSelect_pressed() -> void:
 	pass # Replace with function body.
 	
 func _on_BttnRegresar_pressed() -> void:
-	get_tree().change_scene("res://src/UserInterface/Menus/ConfigureGame.tscn")
+	var _result = get_tree().change_scene("res://src/UserInterface/Menus/ConfigureGame.tscn")
 
 func _on_BttnConfiguracion_pressed() -> void:
 	Global.return_scene = "res://src/UserInterface/Menus/CharacterSelection.tscn"
-	get_tree().change_scene("res://src/UserInterface/Menus/Configuration.tscn")
+	var _result = get_tree().change_scene("res://src/UserInterface/Menus/Configuration.tscn")

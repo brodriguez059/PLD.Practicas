@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Objects/Coin.gd"
 }, {
+"base": "Resource",
+"class": "Configuration_data",
+"language": "GDScript",
+"path": "res://src/Actors/Configuration_Data.gd"
+}, {
 "base": "Actor",
 "class": "Enemy",
 "language": "GDScript",
@@ -33,6 +38,11 @@ _global_script_classes=[ {
 "class": "Gun",
 "language": "GDScript",
 "path": "res://src/Actors/Gun.gd"
+}, {
+"base": "Resource",
+"class": "Play_Game_Data",
+"language": "GDScript",
+"path": "res://src/Actors/Play_Game_Data.gd"
 }, {
 "base": "Actor",
 "class": "Player",
@@ -53,8 +63,10 @@ _global_script_class_icons={
 "Actor": "",
 "Bullet": "",
 "Coin": "",
+"Configuration_data": "",
 "Enemy": "",
 "Gun": "",
+"Play_Game_Data": "",
 "Player": "",
 "Profile_Data": "",
 "SaveButton": ""
@@ -63,12 +75,13 @@ _global_script_class_icons={
 [application]
 
 config/name="La Torre de los Errantes"
-run/main_scene="res://src/UserInterface/Menus/Test.tscn"
+run/main_scene="res://src/UserInterface/MainGame.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://src/Autoload/Global.gd"
+SaveFiles="*res://src/Autoload/SaveFiles.gd"
 
 [display]
 
