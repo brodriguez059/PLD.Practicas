@@ -17,6 +17,8 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 11 )
+next_scene = "ConfigureGame"
+prev_scene = "ProfileSelection"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_left = 0.5

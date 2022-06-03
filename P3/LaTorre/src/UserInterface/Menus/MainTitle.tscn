@@ -14,6 +14,7 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 9 )
+next_scene = "ProfileSelection"
 
 [node name="Title" type="TextureRect" parent="."]
 anchor_left = 0.5

@@ -58,6 +58,11 @@ _global_script_classes=[ {
 "class": "SaveButton",
 "language": "GDScript",
 "path": "res://src/UserInterface/SaveButton.gd"
+}, {
+"base": "Control",
+"class": "Transitionable",
+"language": "GDScript",
+"path": "res://src/UserInterface/Transitionable.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
@@ -69,13 +74,14 @@ _global_script_class_icons={
 "Play_Game_Data": "",
 "Player": "",
 "Profile_Data": "",
-"SaveButton": ""
+"SaveButton": "",
+"Transitionable": ""
 }
 
 [application]
 
 config/name="La Torre de los Errantes"
-run/main_scene="res://src/UserInterface/MainGame.tscn"
+run/main_scene="res://src/UserInterface/Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]

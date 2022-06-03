@@ -21,6 +21,8 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 16 )
+next_scene = "res://src/Main/MainGame"
+prev_scene = "ConfigureGame"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_left = 0.5
@@ -184,6 +186,8 @@ margin_bottom = 64.0
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 2 )
 
+[connection signal="toggled" from="NinePatchRect/NinePatchRect/CharacterView/BttnPrev" to="." method="_on_BttnPrev_toggled"]
+[connection signal="pressed" from="NinePatchRect/NinePatchRect/CharacterView/BttnNext" to="." method="_on_BttnNext_pressed"]
 [connection signal="pressed" from="NinePatchRect/Buttons/BttnRegresar" to="." method="_on_BttnRegresar_pressed"]
 [connection signal="pressed" from="NinePatchRect/Buttons/BttnSelect" to="." method="_on_BttnSelect_pressed"]
 [connection signal="pressed" from="NinePatchRect/Buttons/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]

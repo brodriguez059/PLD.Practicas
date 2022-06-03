@@ -1,4 +1,4 @@
-extends Control
+extends Transitionable
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,11 +14,12 @@ func _ready() -> void:
 	$NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer/NTrapsData.text = str(Global.profile.encountered_traps)	
 
 func _on_BttnRegresar_pressed() -> void:
-	var _result = get_tree().change_scene("res://src/UserInterface/Menus/ProfileSelection.tscn")
+	Global.profile = null
+	emit_signal("goto_prev_scene", prev_scene, true)
 
 func _on_BttnConfiguracion_pressed() -> void:
-	Global.return_scene = "res://src/UserInterface/Menus/ProfileView.tscn"
-	var _result = get_tree().change_scene("res://src/UserInterface/Menus/Configuration.tscn")
+	emit_signal("toggle_configuration")
 
 func _on_BttnJugar_pressed() -> void:
-	var _result = get_tree().change_scene("res://src/UserInterface/Menus/ConfigureGame.tscn")
+	emit_signal("goto_next_scene", next_scene, true)
+	
