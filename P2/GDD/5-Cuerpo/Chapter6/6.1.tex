@@ -1,22 +1,49 @@
 \section{Tipos} % 6.2 Types
 
-\change[inline]{If your game involves character types, you will need to treat
-each one as an object, defining its properties and functionality.}
+% \change[inline]{If your game involves character types, you will need to treat
+% each one as an object, defining its properties and functionality.}
 
-\subsection{PCs (Player Characters)} % 6.2.1 PCs (player characters)
+Una vez que se ha empezado una partida y se entra al modo de juego principal, se
+podrán clasificar los tipos de personajes en dos grandes categorías: personajes
+jugables o \emph{PCs} (del inglés \emph{Playable Characters}); y personajes no
+jugables o \emph{NPCs} (del inglés \emph{Non-Playable Characters}).
+
+\subsection{PCs} % 6.2.1 PCs (player characters)
+
+Se define como personaje jugable a todos aquellos personajes que pueden ser
+controlados por un jugador. La lista de estos personajes se dará en la
+subsección \ref{subsec:playable-characters}.
+
+\subsection{NPCs} % 6.2.2 NPCs (nonplayer characters):
+
+Se define como personaje no jugable a todo aquel personaje que no pueda ser
+controlado por el jugador en ningún momento y que, por tanto, deberá ser
+controlado por el juego a través de inteligencia artificial y algoritmos. Esta
+categoría se divide en los siguientes grupos:
 
 \begin{itemize}
-    \item \textbf{Personaje}:
-\end{itemize}
-
-\subsection{NPCs (Non-Player Characters)} % 6.2.2 NPCs (nonplayer characters):
-
-\begin{itemize}
-    \item \textbf{Enemigo}:
+    \item \textbf{Enemigo}: Un enemigo es todo aquel personaje cuyo
+    comportamiento por defecto para con el jugador es hostil. Dichos personajes
+    serán los que intentarán reducir la vida de los personajes jugables a $0$ y,
+    como consecuencia, hacer que el jugador pierda la partida. Los enemigos se
+    dividen en dos subgrupos:
     \begin{itemize}
-        \item \textbf{Jefe}:
-        \item \textbf{Monstruo}:
+        \item \textbf{Jefe}: Un jefe es un tipo de enemigo especial que
+        representará un reto mucho mayor para los jugadores al llegar a un
+        determinado nivel. Derrotar al jefe será necesario para poder continuar
+        a diferencia del otro tipo de enemigo.
+        \item \textbf{Monstruo}: Un monstruo es un enemigo que puede ser
+        encontrado a lo largo de los niveles del juego mientras se avanza. No es
+        necesario derrotarlos para poder avanzar, pero hacerlo recompensará al
+        jugador con monedas a coste de poder perder puntos de vida si no se
+        tiene cuidado.
     \end{itemize}
-    \item \textbf{Vendedor}:
-    \item \textbf{Cámara}:
+    \item \textbf{Vendedor}: Un vendedor es todo aquel personaje cuyo
+    comportamiento por defecto para con el jugador es neutro y cuya finalidad es
+    la de permitir al jugador hacerse con objetos a cambio de monedas. Podrán
+    aparecer en los niveles con una determinada probabilidad.
+    \item \textbf{Visualizadores}: Un visualizador es todo aquel personaje cuyo
+    comportamiento por defecto para con el jugador es pacífico. Estos personajes
+    serán decorativos y no otorgarán recursos, pero servirán como nexo con el
+    transfondo e historia del juego.
 \end{itemize}

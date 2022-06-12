@@ -17,58 +17,54 @@
 \contentsline {chapter}{\numberline {4}Gameplay}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Resumen}{8}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Descripción del gameplay}{8}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Modelo de interacción}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Modelo de interacción}{9}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Objetivos del jugador}{9}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Retos del jugador}{9}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Modos y otras funcionalidades}{9}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Modos}{9}{subsection.4.3.1}%
-\contentsline {subsubsection}{Modos de juego}{9}{subsubsection*.8}%
-\contentsline {subsubsection}{Grupos de interacción}{10}{subsubsection*.9}%
+\contentsline {section}{\numberline {4.3}Modos y otras funcionalidades}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Modos}{10}{subsection.4.3.1}%
+\contentsline {subsubsection}{Modos de juego}{10}{subsubsection*.14}%
+\contentsline {subsubsection}{Grupos de interacción}{10}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {4.3.2}Recursos}{11}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Controles}{11}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Acciones}{11}{subsection.4.4.1}%
-\contentsline {subsubsection}{Modo menú principal}{11}{subsubsection*.12}%
-\contentsline {subsubsection}{Modo selección de perfil}{11}{subsubsection*.13}%
-\contentsline {subsubsection}{Modo perfil}{12}{subsubsection*.14}%
-\contentsline {subsubsection}{Modo configuración de partida}{12}{subsubsection*.15}%
-\contentsline {subsubsection}{Modo selección de personaje}{12}{subsubsection*.16}%
-\contentsline {subsubsection}{Modo partida}{12}{subsubsection*.17}%
-\contentsline {subsubsection}{Modo pausa}{13}{subsubsection*.19}%
-\contentsline {subsubsection}{Modo victoria}{13}{subsubsection*.20}%
-\contentsline {subsubsection}{Modo derrota}{13}{subsubsection*.21}%
-\contentsline {subsubsection}{Modo configuración}{13}{subsubsection*.22}%
+\contentsline {subsubsection}{Modo menú principal}{12}{subsubsection*.18}%
+\contentsline {subsubsection}{Modo selección de perfil}{12}{subsubsection*.19}%
+\contentsline {subsubsection}{Modo perfil}{12}{subsubsection*.20}%
+\contentsline {subsubsection}{Modo configuración de partida}{12}{subsubsection*.21}%
+\contentsline {subsubsection}{Modo selección de personaje}{12}{subsubsection*.22}%
+\contentsline {subsubsection}{Modo partida}{12}{subsubsection*.23}%
+\contentsline {subsubsection}{Modo pausa}{13}{subsubsection*.25}%
+\contentsline {subsubsection}{Modo victoria}{13}{subsubsection*.26}%
+\contentsline {subsubsection}{Modo derrota}{13}{subsubsection*.27}%
+\contentsline {subsubsection}{Modo configuración}{13}{subsubsection*.28}%
 \contentsline {subsection}{\numberline {4.4.2}Interacciones}{13}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Condiciones de victoria/puntuación}{13}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Reglas}{13}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Niveles}{13}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Personajes de juego}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Tipos}{14}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}PCs (Player Characters)}{14}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}NPCs (Non-Player Characters)}{14}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Diseño de personajes}{14}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Personajes}{14}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Monstruos}{15}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Jefes}{16}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {4.4.4}Reglas}{14}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Niveles}{14}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Personajes de juego}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tipos}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}PCs}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}NPCs}{15}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Descripción de personajes}{16}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Personajes}{16}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Monstruos}{18}{subsection.5.2.2}%
+\contentsline {subsubsection}{Atacante volador}{18}{subsubsection*.37}%
+\contentsline {subsubsection}{Atacante de contacto directo}{18}{subsubsection*.38}%
+\contentsline {subsubsection}{Atacante de contacto cercano}{18}{subsubsection*.39}%
+\contentsline {subsubsection}{Atacante de rango}{18}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {5.2.3}Jefes}{18}{subsection.5.2.3}%
+\contentsline {subsubsection}{El Rey Mago}{18}{subsubsection*.41}%
+\contentsline {subsubsection}{El Minotauro}{18}{subsubsection*.42}%
+\contentsline {subsubsection}{El Viajero}{18}{subsubsection*.43}%
+\contentsline {subsubsection}{Las Escaleras}{18}{subsubsection*.44}%
 \contentsline {subsection}{\numberline {5.2.4}Vendedores}{18}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Otros}{19}{subsection.5.2.5}%
-\contentsline {chapter}{\numberline {6}Historia}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sinopsis}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Historia completa}{20}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Transfondo}{20}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Herramientas narrativas}{21}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Subtramas}{21}{subsection.6.2.3}%
-\contentsline {subsubsection}{Subplot 1}{21}{subsubsection*.33}%
-\contentsline {subsubsection}{Subplot 2}{21}{subsubsection*.34}%
-\contentsline {chapter}{\numberline {7}El mundo del juego}{22}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Resumen}{22}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Sitios importantes}{22}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Métodos de viaje}{22}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Mapa}{22}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Escala}{22}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Objetos físicos}{23}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Condiciones climáticas}{23}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Día y noche}{23}{section.7.8}%
-\contentsline {section}{\numberline {7.9}Tiempo}{23}{section.7.9}%
-\contentsline {section}{\numberline {7.10}Físicas}{23}{section.7.10}%
-\contentsline {section}{\numberline {7.11}Sociedad/cultura}{23}{section.7.11}%
-\contentsline {chapter}{Referencias}{25}{chapter*.36}%
+\contentsline {subsection}{\numberline {5.2.5}Visualizador}{18}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Historia}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Sinopsis}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Historia completa}{19}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Transfondo}{19}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Herramientas narrativas}{19}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Subtramas}{20}{subsection.6.2.3}%
+\contentsline {subsubsection}{Subplot 1}{20}{subsubsection*.50}%
+\contentsline {subsubsection}{Subplot 2}{20}{subsubsection*.51}%
+\contentsline {chapter}{Referencias}{21}{chapter*.52}%
