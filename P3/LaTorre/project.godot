@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="La Torre de los Errantes"
-run/main_scene="res://src/UserInterface/Main.tscn"
+run/main_scene="res://src/Main/MainGame.tscn"
 config/icon="res://icon.png"
 
 [autoload]
