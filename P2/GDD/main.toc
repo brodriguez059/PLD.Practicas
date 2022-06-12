@@ -51,20 +51,27 @@
 \contentsline {subsubsection}{Atacante volador}{18}{subsubsection*.37}%
 \contentsline {subsubsection}{Atacante de contacto directo}{18}{subsubsection*.38}%
 \contentsline {subsubsection}{Atacante de contacto cercano}{18}{subsubsection*.39}%
-\contentsline {subsubsection}{Atacante de rango}{18}{subsubsection*.40}%
-\contentsline {subsection}{\numberline {5.2.3}Jefes}{18}{subsection.5.2.3}%
-\contentsline {subsubsection}{El Rey Mago}{18}{subsubsection*.41}%
-\contentsline {subsubsection}{El Minotauro}{18}{subsubsection*.42}%
-\contentsline {subsubsection}{El Viajero}{18}{subsubsection*.43}%
-\contentsline {subsubsection}{Las Escaleras}{18}{subsubsection*.44}%
-\contentsline {subsection}{\numberline {5.2.4}Vendedores}{18}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Visualizador}{19}{subsection.5.2.5}%
-\contentsline {chapter}{\numberline {6}Historia}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sinopsis}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Historia completa}{20}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Transfondo}{20}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Herramientas narrativas}{20}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Subtramas}{21}{subsection.6.2.3}%
-\contentsline {subsubsection}{Subplot 1}{21}{subsubsection*.50}%
-\contentsline {subsubsection}{Subplot 2}{21}{subsubsection*.51}%
-\contentsline {chapter}{Referencias}{23}{chapter*.52}%
+\contentsline {subsubsection}{Atacante de rango}{19}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {5.2.3}Jefes}{19}{subsection.5.2.3}%
+\contentsline {subsubsection}{El Rey Mago}{19}{subsubsection*.41}%
+\contentsline {subsubsection}{El Minotauro}{19}{subsubsection*.45}%
+\contentsline {subsubsection}{El Viajero}{19}{subsubsection*.46}%
+\contentsline {subsubsection}{Las Escaleras}{20}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {5.2.4}Vendedores}{20}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Visualizador}{20}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Otros elementos de juego}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Tipos}{21}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Objetos mágicos}{21}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Objetos recursos}{21}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Plataformas}{21}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Trampas}{21}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Descripción de elementos}{21}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Historia}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Sinopsis}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Historia completa}{22}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Transfondo}{22}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Herramientas narrativas}{22}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Subtramas}{23}{subsection.7.2.3}%
+\contentsline {subsubsection}{Subplot 1}{23}{subsubsection*.53}%
+\contentsline {subsubsection}{Subplot 2}{23}{subsubsection*.54}%
+\contentsline {chapter}{Referencias}{25}{chapter*.55}%

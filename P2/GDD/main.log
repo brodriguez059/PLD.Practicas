@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.22)  12 JUN 2022 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.22)  12 JUN 2022 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1504,7 +1504,7 @@ LaTeX Info: Redefining \nameref on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<1-Portada/UGR_LOGO.png, id=232, 393.72093pt x 370.38374pt>
+<1-Portada/UGR_LOGO.png, id=260, 393.72093pt x 370.38374pt>
 File: 1-Portada/UGR_LOGO.png Graphic file (type png)
 <use 1-Portada/UGR_LOGO.png>
 Package pdftex.def Info: 1-Portada/UGR_LOGO.png  used on input line 7.
@@ -1577,32 +1577,32 @@ Cap\'{\i }tulo 3.
 (./5-Cuerpo/Chapter3/3.1.tex) (./5-Cuerpo/Chapter3/3.2.tex) (./5-Cuerpo/Chapter3/3.4.tex [3
 
 ]
-<5-Cuerpo/Chapter3/UCH1.png, id=321, 564.60938pt x 317.68687pt>
+<5-Cuerpo/Chapter3/UCH1.png, id=357, 564.60938pt x 317.68687pt>
 File: 5-Cuerpo/Chapter3/UCH1.png Graphic file (type png)
 <use 5-Cuerpo/Chapter3/UCH1.png>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/UCH1.png  used on input line 24.
 (pdftex.def)             Requested size: 176.40439pt x 99.2575pt.
-<5-Cuerpo/Chapter3/UCH2.jpg, id=322, 1445.4pt x 813.0375pt>
+<5-Cuerpo/Chapter3/UCH2.jpg, id=358, 1445.4pt x 813.0375pt>
 File: 5-Cuerpo/Chapter3/UCH2.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/UCH2.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/UCH2.jpg  used on input line 30.
 (pdftex.def)             Requested size: 176.40439pt x 99.22269pt.
-<5-Cuerpo/Chapter3/UCH3.jpg, id=323, 1445.4pt x 813.0375pt>
+<5-Cuerpo/Chapter3/UCH3.jpg, id=359, 1445.4pt x 813.0375pt>
 File: 5-Cuerpo/Chapter3/UCH3.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/UCH3.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/UCH3.jpg  used on input line 37.
 (pdftex.def)             Requested size: 176.40439pt x 99.22269pt.
-<5-Cuerpo/Chapter3/JPP1.jpg, id=326, 1927.2pt x 1084.05pt>
+<5-Cuerpo/Chapter3/JPP1.jpg, id=362, 1927.2pt x 1084.05pt>
 File: 5-Cuerpo/Chapter3/JPP1.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/JPP1.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/JPP1.jpg  used on input line 62.
 (pdftex.def)             Requested size: 176.40439pt x 99.21442pt.
-<5-Cuerpo/Chapter3/JPP2.jpg, id=327, 1927.2pt x 1084.05pt>
+<5-Cuerpo/Chapter3/JPP2.jpg, id=363, 1927.2pt x 1084.05pt>
 File: 5-Cuerpo/Chapter3/JPP2.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/JPP2.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/JPP2.jpg  used on input line 68.
 (pdftex.def)             Requested size: 176.40439pt x 99.21442pt.
-<5-Cuerpo/Chapter3/JPP3.jpg, id=328, 1927.2pt x 1084.05pt>
+<5-Cuerpo/Chapter3/JPP3.jpg, id=364, 1927.2pt x 1084.05pt>
 File: 5-Cuerpo/Chapter3/JPP3.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/JPP3.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/JPP3.jpg  used on input line 75.
@@ -1610,17 +1610,17 @@ Package pdftex.def Info: 5-Cuerpo/Chapter3/JPP3.jpg  used on input line 75.
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
  [4 <./5-Cuerpo/Chapter3/UCH1.png> <./5-Cuerpo/Chapter3/UCH2.jpg> <./5-Cuerpo/Chapter3/UCH3.jpg>]
-<5-Cuerpo/Chapter3/PMP1.jpg, id=342, 1927.2pt x 1084.05pt>
+<5-Cuerpo/Chapter3/PMP1.jpg, id=378, 1927.2pt x 1084.05pt>
 File: 5-Cuerpo/Chapter3/PMP1.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/PMP1.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/PMP1.jpg  used on input line 98.
 (pdftex.def)             Requested size: 176.40439pt x 99.21442pt.
-<5-Cuerpo/Chapter3/PMP2.jpg, id=343, 1954.34366pt x 1099.31831pt>
+<5-Cuerpo/Chapter3/PMP2.jpg, id=379, 1954.34366pt x 1099.31831pt>
 File: 5-Cuerpo/Chapter3/PMP2.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/PMP2.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/PMP2.jpg  used on input line 104.
 (pdftex.def)             Requested size: 176.40439pt x 99.21954pt.
-<5-Cuerpo/Chapter3/PMP3.jpg, id=344, 1954.34366pt x 1099.31831pt>
+<5-Cuerpo/Chapter3/PMP3.jpg, id=380, 1954.34366pt x 1099.31831pt>
 File: 5-Cuerpo/Chapter3/PMP3.jpg Graphic file (type jpg)
 <use 5-Cuerpo/Chapter3/PMP3.jpg>
 Package pdftex.def Info: 5-Cuerpo/Chapter3/PMP3.jpg  used on input line 114.
@@ -1672,29 +1672,36 @@ LaTeX Info: Redefining \% on input line 44.
  [16]) (./5-Cuerpo/Chapter6/6.2/6.2.2.tex
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- [17]) (./5-Cuerpo/Chapter6/6.2/6.2.3.tex) (./5-Cuerpo/Chapter6/6.2/6.2.4.tex
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
- [18]) (./5-Cuerpo/Chapter6/6.2/6.2.5.tex))) (./5-Cuerpo/Chapter7/ch7.tex
+ [17]
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+ [18]) (./5-Cuerpo/Chapter6/6.2/6.2.3.tex
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+ [19]) (./5-Cuerpo/Chapter6/6.2/6.2.4.tex) (./5-Cuerpo/Chapter6/6.2/6.2.5.tex))) (./5-Cuerpo/Chapter11/ch11.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [19]
+ [20]
 Cap\'{\i }tulo 6.
-(./5-Cuerpo/Chapter7/7.1.tex) (./5-Cuerpo/Chapter7/7.2.tex) (./5-Cuerpo/Chapter7/7.3.tex) (./5-Cuerpo/Chapter7/7.4.tex) (./5-Cuerpo/Chapter7/7.5.tex [20
+(./5-Cuerpo/Chapter11/11.1.tex) (./5-Cuerpo/Chapter11/11.2.tex)) (./5-Cuerpo/Chapter7/ch7.tex [21
+
+]
+Cap\'{\i }tulo 7.
+(./5-Cuerpo/Chapter7/7.1.tex) (./5-Cuerpo/Chapter7/7.2.tex) (./5-Cuerpo/Chapter7/7.3.tex) (./5-Cuerpo/Chapter7/7.4.tex) (./5-Cuerpo/Chapter7/7.5.tex [22
 
 ]))
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
- [21] [22
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+ [23] [24
 
 ]) (./7-Bibliografía/bibliography.tex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [23
+)) [25
 
 
-] [24
+] [26
 
 ]
 \tf@thm=\write7
@@ -1706,24 +1713,24 @@ LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 79572322EBB55843E0A66225E6998C4B;6208.
+(rerunfilecheck)             Checksum: 082EABB9E74DD67FDBC9324D5D01EBFA;7147.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48013 strings out of 478238
- 984779 string characters out of 5850456
- 1779996 words of memory out of 5000000
- 65175 multiletter control sequences out of 15000+600000
+ 48074 strings out of 478238
+ 986034 string characters out of 5850456
+ 1779431 words of memory out of 5000000
+ 65214 multiletter control sequences out of 15000+600000
  528222 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,12n,102p,1386b,2941s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 3881707 bytes).
+Output written on main.pdf (30 pages, 3887514 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 476 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
- 583 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 155 named destinations out of 1000 (max. 500000)
+ 639 words of extra memory for PDF output out of 10000 (max. 10000000)
 

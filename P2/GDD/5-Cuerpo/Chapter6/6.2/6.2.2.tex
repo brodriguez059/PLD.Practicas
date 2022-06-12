@@ -4,40 +4,83 @@
 % \subsubsection{Behaviour} % 6.2.2.1 Behavior
 % \subsubsection{AI} % 6.2.2.2 AI
 
-\subsubsection{Atacante volador}
-% (murcielagos, insectos gigantes, nubes, \dots)
-\begin{itemize}
-    \item \textbf{Ojo volador}
-    \item \textbf{Nubes mágicas}
-\end{itemize}
+La explicación de los monstruos del juego se realizará dividiéndolos por sus
+principales tipos de inteligencia artificial para aprovecharse de las
+similitudes de comportamiento.
 
+\subsubsection{Atacante volador} % (murcielagos, insectos gigantes, nubes, \dots)
+
+Los enemigos con este tipo de inteligencia artificial no se verá afectados por
+la gravedad ya que son capaces de volar. Dejando eso de lado, el comportamiento
+que tendrán como entidades hostiles es el de patrullar, detectar al jugador y
+atacar.
+
+\begin{itemize}
+    \item \textbf{Ojo volador}: Un gran monstruo nacido de un ojo que fue mutado
+    por la magia de la torre. Al detectar al jugador, volará en su dirección y
+    cada cierto tiempo se lanzará hacia él para atacarle.
+    \item \textbf{Nubes mágicas}: La manifestación de la magia de la torre.
+    Estas nubes se forman cuando la concentración de magia en un punto es
+    excesiva, tomando vida y volviéndose hostil. Al detecar al jugador, volará
+    en su dirección y cada cierto tiempo se lanzará hacia él para atacarle.
+    Mientras no esté atacando al jugador, la nube será invulnerable a cualquier
+    tipo de daño.
+\end{itemize}
 
 \subsubsection{Atacante de contacto directo}
 % (jabalí, \dots)
+
+Este tipo de entidades, a diferencia de los atacantes voladores, sí se ven
+afectados por la gravedad. Dejando eso de lado, el comportamiento esperado de
+estos será el mismo: patrullar, detectar y atacar. La diferencia, sin embargo,
+recae en el hecho de que los ataques realizados por estos consistirán en que el
+cuerpo del propio monstruo haga contacto con el jugador para hacer daño.
+
 \begin{itemize}
-    \item \textbf{Entidad mágica}
-    \item \textbf{}
-    \item \textbf{}
+    \item \textbf{Animal salvaje}: Un animal que se ha vuelto loco por la
+    influencia mágica de la torre. Al detectar al jugador, se moverá en su
+    dirección y cargará contra él haciendo daño al colisionar con éste.
 \end{itemize}
 
 
 \subsubsection{Atacante de contacto cercano}
 % (soldados, \dots)
+
+El comportamiento de estos monstruos será el mismo que los atacantes de contacto
+directo. La diferencia recae en el hecho de que para poder hacer daño, deberán
+acercarse al jugador, pero el ataque no consistirá en una colisión cuerpo a
+cuerpo con el jugador, sino que en una colisión entre un arma o extensión y el
+cuerpo del jugador.
+
 \begin{itemize}
-    \item \textbf{Soldado no-muerto}
-    \item \textbf{}
-    \item \textbf{}
+    \item \textbf{Entidad mágica}: Un monstruo nacido de la mutación y mezcla de fluidos y
+    materia residual que se ha quedado en la torre con el tiempo. Al detectar al
+    jugador, se moverá en su dirección y una vez esté lo suficientemente cerca,
+    lo atacará con sus garras.
+    \item \textbf{Soldado no-muerto}: Un soldado revivido gracias a la magia de
+    la torre. Al detectar al jugador, se moverá en su dirección y una vez esté
+    lo suficientemente cerca, lo atacará con su espada.
 \end{itemize}
 
 \subsubsection{Atacante de rango}
 % (arqueros, magos, \dots)
+
+El comportamiento de estos monstruos será el mismo que los atacantes de contacto
+cercano. La diferencia recae en el hecho de que para poder hacer daño,
+procurarán alejarse del jugador para poder posicionarse de tal forma que se
+pueda realizar un ataque a larga distancia con un proyectil. El daño ocurrirá
+cuando dicho proyectil haga contacto con el cuerpo del jugador.
+
 \begin{itemize}
-    \item \textbf{Arquero no-muerto}
-    \item \textbf{Mago no-muerto}
-    \item \textbf{}
+    \item \textbf{Arquero no-muerto}: Un arquero revivido gracias a la magia de
+    la torre. Al detectar al jugador desde una distancia considerable, se
+    posicionará para atacarlo con su arco. Si el jugador se acerca demasiado,
+    intentará alejarse.
+    \item \textbf{Mago no-muerto}: Un mago revivido gracias a la magia de
+    la torre. Al detectar al jugador desde una distancia considerable, se
+    posicionará para atacarlo con su bastón mágico. Si el jugador se acerca
+    demasiado, intentará alejarse.
 \end{itemize}
-
-
 
 % \begin{itemize}
 %     \item \textbf{Isquilox}: De las tinieblas de la historia aparece el
