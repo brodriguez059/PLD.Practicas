@@ -58,13 +58,13 @@
 \contentsline {subsubsection}{El Viajero}{18}{subsubsection*.43}%
 \contentsline {subsubsection}{Las Escaleras}{18}{subsubsection*.44}%
 \contentsline {subsection}{\numberline {5.2.4}Vendedores}{18}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Visualizador}{18}{subsection.5.2.5}%
-\contentsline {chapter}{\numberline {6}Historia}{19}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sinopsis}{19}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Historia completa}{19}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Transfondo}{19}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Herramientas narrativas}{19}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Subtramas}{20}{subsection.6.2.3}%
-\contentsline {subsubsection}{Subplot 1}{20}{subsubsection*.50}%
-\contentsline {subsubsection}{Subplot 2}{20}{subsubsection*.51}%
-\contentsline {chapter}{Referencias}{21}{chapter*.52}%
+\contentsline {subsection}{\numberline {5.2.5}Visualizador}{19}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Historia}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Sinopsis}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Historia completa}{20}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Transfondo}{20}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Herramientas narrativas}{20}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Subtramas}{21}{subsection.6.2.3}%
+\contentsline {subsubsection}{Subplot 1}{21}{subsubsection*.50}%
+\contentsline {subsubsection}{Subplot 2}{21}{subsubsection*.51}%
+\contentsline {chapter}{Referencias}{23}{chapter*.52}%
