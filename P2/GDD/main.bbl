@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{noauthor_pummel_nodate}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Pummel {Party} game revenue and stats on {Steam} - {Steam} {Marketing} {Tool}}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://games-stats.com/steam/game/pummel-party/
+      \endverb
+      \verb{url}
+      \verb https://games-stats.com/steam/game/pummel-party/
+      \endverb
+    \endentry
+    \entry{noauthor_jackbox_nodate}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Jackbox} {Party} {Pack} 7 game revenue and stats on {Steam} - {Steam} {Marketing} {Tool}}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://games-stats.com/steam/game/the-jackbox-party-pack-7/
+      \endverb
+      \verb{url}
+      \verb https://games-stats.com/steam/game/the-jackbox-party-pack-7/
+      \endverb
+    \endentry
+    \entry{noauthor_ultimate_nodate}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Ultimate {Chicken} {Horse} game revenue and stats on {Steam} - {Steam} {Marketing} {Tool}}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://games-stats.com/steam/game/ultimate-chicken-horse/
+      \endverb
+      \verb{url}
+      \verb https://games-stats.com/steam/game/ultimate-chicken-horse/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
