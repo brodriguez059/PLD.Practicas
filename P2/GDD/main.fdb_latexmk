@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1655040179 "main.bcf" "main.bbl" "main" 1655064927
-  "main.bcf" 1655064926 107592 02a13fc228b0abfd293c97b4aff205e5 "pdflatex"
+["biber main"] 1655040179 "main.bcf" "main.bbl" "main" 1655065044
+  "main.bcf" 1655065043 107592 02a13fc228b0abfd293c97b4aff205e5 "pdflatex"
   "references.bib" 1654973920 672 c79575fa60a8e2fc3c7d6d51f31c7aa4 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1655064922 "/home/bal/Desktop/PLD/PLD/PLD.Practicas/P2/GDD/main.tex" "main.pdf" "main" 1655064927
+["pdflatex"] 1655065039 "/home/bal/Desktop/PLD/PLD/PLD.Practicas/P2/GDD/main.tex" "main.pdf" "main" 1655065044
   "/home/bal/Desktop/PLD/PLD/PLD.Practicas/P2/GDD/main.tex" 1654973920 2381 71f16eb0749c5fe5d37dd2f63e5d308d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -311,8 +311,8 @@
   "1-Portada/portada.tex" 1654973920 1051 9b01116159c4d5c1ed9fbe237771e66a ""
   "3-Indices/toc.tex" 1654973920 86 01c5e960a4b711f37acac96439afe7b4 ""
   "5-Cuerpo/Chapter1/ch1.tex" 1655050284 3927 93e8f312bffefb428ca1724a900b2a00 ""
-  "5-Cuerpo/Chapter11/11.1.tex" 1655037081 287 209668514079efba4f117681ea6f16d5 ""
-  "5-Cuerpo/Chapter11/11.2.tex" 1655037114 149 64b5fe3acfd9da912d8dd176a7d0f352 ""
+  "5-Cuerpo/Chapter11/11.1.tex" 1655065038 342 8a1f14d5d72190a7610cb426dd730576 ""
+  "5-Cuerpo/Chapter11/11.2.tex" 1655065029 260 6e24eb260c097539a03574cf0f879094 ""
   "5-Cuerpo/Chapter11/ch11.tex" 1655037140 108 c1fcfeb7c440aabc6b9617c3205dd1b0 ""
   "5-Cuerpo/Chapter2/2.1.tex" 1654973920 642 c20d90338bbb93e70210279f594d3654 ""
   "5-Cuerpo/Chapter2/2.2.tex" 1655023316 2112 abb73dce03e1a49bcf7e7720f9ed29fc ""
@@ -351,12 +351,12 @@
   "5-Cuerpo/Chapter6/ch6.tex" 1654973920 99 c8652ac7336cae9914df160fe84eda87 ""
   "5-Cuerpo/cuerpo.tex" 1655064916 429 78bce3251f6e8644586541250e6525ae ""
   "7-Bibliografía/bibliography.tex" 1654973920 525 2422ac16de49d3dc5a9eca579bbe42b6 ""
-  "main.aux" 1655064926 20553 2b0cef1a8044d149747af50050748c9f "pdflatex"
+  "main.aux" 1655065043 20553 283c6ec7c0ee5af2f67d19ef66a60e88 "pdflatex"
   "main.bbl" 1655040180 2364 2301349a0b89daa483cf8f23df8bed38 "biber main"
-  "main.out" 1655064926 6426 d6e0d254a4aab242aa5be1b3ada75603 "pdflatex"
-  "main.run.xml" 1655064926 2402 33c4f11d1c2582e7b955434925489b4e "pdflatex"
+  "main.out" 1655065043 6426 42a6267661837cb26a15f447ad061a51 "pdflatex"
+  "main.run.xml" 1655065043 2402 33c4f11d1c2582e7b955434925489b4e "pdflatex"
   "main.tex" 1654973920 2381 71f16eb0749c5fe5d37dd2f63e5d308d ""
-  "main.toc" 1655064926 5341 b3eb3034b4c289bded4d4241ffbc73ef "pdflatex"
+  "main.toc" 1655065043 5341 385396bdf62242aa73fda53a65ac21d0 "pdflatex"
   "metadata.tex" 1654973920 1323 3ff07f98d8425edbe857bee12a8dfa58 ""
   (generated)
   "main.aux"
