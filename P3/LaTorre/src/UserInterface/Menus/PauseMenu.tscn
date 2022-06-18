@@ -1,81 +1,78 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=1]
-[ext_resource path="res://src/UserInterface/Menus/PauseMenu.gd" type="Script" id=2]
-[ext_resource path="res://assets/theme/fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://src/UserInterface/CoinsCounter.tscn" type="PackedScene" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-size = 42
-font_data = ExtResource( 3 )
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/button/BttnAbandonar.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/button/BttnAbandonarPressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnContinuar.png" type="Texture" id=6]
+[ext_resource path="res://assets/art/ui/button/BttnContinuarPressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=8]
+[ext_resource path="res://src/UserInterface/Menus/PauseMenu.gd" type="Script" id=9]
 
 [node name="PauseMenu" type="Control"]
-pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 9 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -159.0
+margin_top = -186.0
+margin_right = 160.0
+margin_bottom = 132.0
+texture = ExtResource( 2 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -136.5
+margin_top = 24.0
+margin_right = 136.5
+margin_bottom = 59.0
 theme = ExtResource( 1 )
-script = ExtResource( 2 )
-
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0, 0, 0, 0.294118 )
-
-[node name="CenterContainer" type="CenterContainer" parent="ColorRect"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer"]
-margin_left = 362.0
-margin_top = 200.0
-margin_right = 662.0
-margin_bottom = 400.0
-rect_min_size = Vector2( 300, 200 )
-custom_constants/separation = 6
-alignment = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
-margin_top = 14.0
-margin_right = 300.0
-margin_bottom = 61.0
-custom_fonts/font = SubResource( 1 )
-text = "Game Paused"
+text = "Pausa"
 align = 1
 valign = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="ColorRect/CenterContainer/VBoxContainer"]
-margin_top = 67.0
-margin_right = 300.0
-margin_bottom = 87.0
-rect_min_size = Vector2( 0, 20 )
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -128.0
+margin_top = -232.0
+margin_right = 128.0
+margin_bottom = -32.0
+alignment = 1
 
-[node name="ResumeButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
-margin_left = 60.0
-margin_top = 93.0
-margin_right = 240.0
-margin_bottom = 136.0
-rect_min_size = Vector2( 180, 40 )
-size_flags_horizontal = 4
-text = "Resume"
+[node name="BttnContinuar" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 
-[node name="QuitButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
-margin_left = 60.0
-margin_top = 142.0
-margin_right = 240.0
-margin_bottom = 185.0
-rect_min_size = Vector2( 180, 40 )
-size_flags_horizontal = 4
-text = "Quit"
+[node name="BttnConfiguracion" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_top = 68.0
+margin_right = 256.0
+margin_bottom = 132.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 8 )
 
-[node name="CoinsCounter" parent="ColorRect" instance=ExtResource( 4 )]
-margin_right = 105.0
-margin_bottom = 50.0
+[node name="BttnAbandonar" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_top = 136.0
+margin_right = 256.0
+margin_bottom = 200.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
 
-[node name="Tween" type="Tween" parent="."]
-
-[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_ResumeButton_pressed"]
-[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
-[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnContinuar" to="." method="_on_BttnContinuar_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnAbandonar" to="." method="_on_BttnSalir_pressed"]

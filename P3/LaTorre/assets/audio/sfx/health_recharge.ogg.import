@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/health_recharge.ogg-d9e0b198456c78f2781d5eab701b05cc.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/sfx/health_recharge.ogg"
+dest_files=[ "res://.import/health_recharge.ogg-d9e0b198456c78f2781d5eab701b05cc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

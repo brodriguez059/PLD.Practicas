@@ -13,12 +13,12 @@ func _on_BttnRegresar_pressed() -> void:
 
 func _on_MasterSlider_value_changed(value: float) -> void:
 	Global.configuration.master_volume = value
-	print("Máster: " + str(value))
+	Music.change_master_volume(value)
 
 func _on_MusicSlider_value_changed(value: float) -> void:
 	Global.configuration.music_volume = value
-	print("Música: " + str(value))
+	Music.change_music_volume(value)
 
 func _on_FxSlider_value_changed(value: float) -> void:
 	Global.configuration.fx_volume = value
-	print("Fx: " + str(value))
+	Music.change_fx_volume(value)

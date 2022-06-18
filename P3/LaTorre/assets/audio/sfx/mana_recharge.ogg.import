@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mana_recharge.ogg-8c621288c44d749da15976df5405d396.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/sfx/mana_recharge.ogg"
+dest_files=[ "res://.import/mana_recharge.ogg-8c621288c44d749da15976df5405d396.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

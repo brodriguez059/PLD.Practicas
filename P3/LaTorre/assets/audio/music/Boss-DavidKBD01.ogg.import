@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Boss-DavidKBD01.ogg-01c371febeefd167cb5fd37fb818b512.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/music/Boss-DavidKBD01.ogg"
+dest_files=[ "res://.import/Boss-DavidKBD01.ogg-01c371febeefd167cb5fd37fb818b512.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

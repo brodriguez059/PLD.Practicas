@@ -7,18 +7,24 @@ func _ready() -> void:
 func _on_BttnSelect_pressed() -> void:
 	# ESTA ES UNA DE LAS FUNCIONES MÁS IMPORTANTES DE TU JUEGO
 	# DESDE AQUÍ SE VA A LA PARTIDA DE VERDAD
+	$ButtonPressedAudio.play()
 	print("Empieza la partida")
 	print("Esperando a los demás jugadores...")
 	emit_signal("goto_next_scene", next_scene, false)
-	
+
 func _on_BttnRegresar_pressed() -> void:
+	$ButtonPressedAudio.play()
 	emit_signal("goto_prev_scene", prev_scene, true)
 
 func _on_BttnConfiguracion_pressed() -> void:
+	$ButtonPressedAudio.play()
 	emit_signal("toggle_configuration")
 
-func _on_BttnPrev_toggled(button_pressed: bool) -> void:
-	pass # Replace with function body.
+
+# Character selection
 
 func _on_BttnNext_pressed() -> void:
-	pass # Replace with function body.
+	$CharacterChangeAudio.play()
+
+func _on_BttnPrev_pressed() -> void:
+	$CharacterChangeAudio.play()

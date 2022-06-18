@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1596"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    sodipodi:docname="Game_UI.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,16 +23,18 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.16"
-     inkscape:cx="3934.375"
-     inkscape:cy="5218.75"
+     inkscape:zoom="0.068877585"
+     inkscape:cx="3324.7391"
+     inkscape:cy="2729.4801"
      inkscape:window-width="1366"
      inkscape:window-height="703"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     showguides="false">
+     showguides="false"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#505050">
     <inkscape:grid
        type="xygrid"
        id="grid24060" />
@@ -115,17 +117,17 @@
        id="path1218"
        style="fill:#88e060;fill-opacity:1;stroke-width:3.03434"
        inkscape:label="IconReload"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
+       inkscape:export-filename="../../../../BttnReload.png"
+       inkscape:export-xdpi="17.311256"
+       inkscape:export-ydpi="17.311256" />
     <path
        d="m 1640.5816,1148.686 q 2.1253,0 3.7185,1.5937 1.5943,1.5938 1.5943,3.7187 v 15.9375 l -21.2503,21.2501 21.2503,21.25 v 15.9376 q 0,2.2577 -1.5943,3.8515 -1.5932,1.4609 -3.7185,1.4609 h -15.9375 l -21.2504,-21.25 -21.2492,21.25 h -15.9375 q -2.2578,0 -3.8521,-1.4609 -1.4609,-1.5938 -1.4609,-3.8515 v -15.9376 l 21.2505,-21.25 -21.2505,-21.2501 v -15.8046 q 0,-2.2578 1.4609,-3.8516 1.5943,-1.5937 3.8521,-1.5937 h 15.9375 l 21.2492,21.2499 21.2504,-21.2499 h 15.9375"
        id="path1262"
        style="fill:#fa8132;fill-opacity:1;stroke-width:2.65625"
        inkscape:label="IconForbidden"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
+       inkscape:export-filename="../../../../BttnDisabled.png"
+       inkscape:export-xdpi="19.124622"
+       inkscape:export-ydpi="19.124622" />
     <g
        id="g9674"
        inkscape:label="PanelMarbleFlat"
@@ -1717,9 +1719,9 @@
        id="g14517-3-7"
        transform="matrix(5.3333286,0,0,5.3333286,2.3514,1129.834)"
        inkscape:label="BttnAbandonar"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
+       inkscape:export-filename="/home/bal/Desktop/BttnAbandonar.png"
+       inkscape:export-xdpi="12.700011"
+       inkscape:export-ydpi="12.700011">
       <g
          id="g1961-67-4"
          transform="matrix(0.50526316,0,0,0.48979591,-196.04211,-44.571428)"
@@ -1765,9 +1767,9 @@
     <g
        id="g14475"
        inkscape:label="BttnAbandonarPressed"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
+       inkscape:export-filename="/home/bal/Desktop/BttnAbandonarPressed.png"
+       inkscape:export-xdpi="12.70001"
+       inkscape:export-ydpi="12.70001">
       <g
          id="g10517-3-3"
          transform="matrix(1.8285698,0,0,1.8285698,-1127.243,1526.6022)">
@@ -1814,9 +1816,9 @@
        id="g14517-9"
        transform="matrix(5.3333286,0,0,5.3333286,2.3514,988.60474)"
        inkscape:label="BttnContinuar"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
+       inkscape:export-filename="/home/bal/Desktop/BttnContinuar.png"
+       inkscape:export-xdpi="12.700011"
+       inkscape:export-ydpi="12.700011">
       <g
          id="g1961-2"
          transform="matrix(0.50526316,0,0,0.48979591,-196.04211,-44.571428)"
@@ -1863,9 +1865,9 @@
        id="g16278-04"
        transform="matrix(5.3333286,0,0,5.3333286,-186.3181,882.91852)"
        inkscape:label="BttnContinuarPressed"
-       inkscape:export-filename="/home/bal/Desktop/UI.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
+       inkscape:export-filename="/home/bal/Desktop/BttnContinuarPressed.png"
+       inkscape:export-xdpi="12.700011"
+       inkscape:export-ydpi="12.700011">
       <g
          id="g10517-8"
          transform="matrix(0.34285715,0,0,0.34285715,-176.42356,94.210283)">

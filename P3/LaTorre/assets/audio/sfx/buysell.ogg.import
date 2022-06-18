@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/buysell.ogg-555dd2ce55c519ff42b8e0ffa52cf437.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/sfx/buysell.ogg"
+dest_files=[ "res://.import/buysell.ogg-555dd2ce55c519ff42b8e0ffa52cf437.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
