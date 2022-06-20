@@ -1,0 +1,146 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/art/ui/button/BttnPause.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterHealth.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterHealthBackground.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterMana.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/bar/BarCharacterManaBackground.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnPausePressed.png" type="Texture" id=6]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=8]
+[ext_resource path="res://assets/art/ui/panel/PanelStone.png" type="Texture" id=9]
+[ext_resource path="res://src/UI/GameLayer/GameOverlay.gd" type="Script" id=10]
+[ext_resource path="res://src/UI/GameLayer/Components/ActionableButton.tscn" type="PackedScene" id=12]
+
+[node name="GameOverlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 10 )
+
+[node name="Resources" type="NinePatchRect" parent="."]
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 128.0
+margin_bottom = 160.0
+
+[node name="Bars" type="VBoxContainer" parent="Resources"]
+anchor_right = 1.0
+margin_bottom = 84.0
+
+[node name="HealthBar" type="TextureProgress" parent="Resources/Bars"]
+margin_right = 363.0
+margin_bottom = 40.0
+value = 100.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+
+[node name="ManaBar" type="TextureProgress" parent="Resources/Bars"]
+margin_top = 44.0
+margin_right = 363.0
+margin_bottom = 84.0
+value = 100.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 4 )
+
+[node name="Pause" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -88.0
+margin_top = 24.0
+margin_right = -24.0
+margin_bottom = 94.0
+
+[node name="BttnPause" type="TextureButton" parent="Pause"]
+margin_right = 64.0
+margin_bottom = 70.0
+focus_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 6 )
+
+[node name="Abilities" type="NinePatchRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -124.0
+margin_right = -24.0
+margin_bottom = -24.0
+texture = ExtResource( 9 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="Abilities" type="HBoxContainer" parent="Abilities"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -87.0
+margin_top = -40.0
+margin_right = 87.0
+margin_bottom = 40.0
+alignment = 1
+
+[node name="Ability1" parent="Abilities/Abilities" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_right = 81.0
+margin_bottom = 80.0
+
+[node name="VSeparator" type="VSeparator" parent="Abilities/Abilities"]
+margin_left = 85.0
+margin_right = 89.0
+margin_bottom = 80.0
+
+[node name="Ability2" parent="Abilities/Abilities" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_right = 173.0
+margin_bottom = 80.0
+
+[node name="Objects" type="NinePatchRect" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 24.0
+margin_top = -124.0
+margin_right = 216.0
+margin_bottom = -24.0
+texture = ExtResource( 8 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="Objects" type="HBoxContainer" parent="Objects"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -87.0
+margin_top = -40.0
+margin_right = 87.0
+margin_bottom = 40.0
+
+[node name="Object1" parent="Objects/Objects" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 80.0
+margin_bottom = 80.0
+
+[node name="VSeparator" type="VSeparator" parent="Objects/Objects"]
+margin_left = 84.0
+margin_right = 88.0
+margin_bottom = 80.0
+
+[node name="Object2" parent="Objects/Objects" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 92.0
+margin_right = 172.0
+margin_bottom = 80.0
+
+[connection signal="pressed" from="Pause/BttnPause" to="." method="_on_BttnPause_pressed"]

@@ -1,0 +1,206 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=1]
+[ext_resource path="res://assets/art/ui/button/BttnRegresarPressed.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/SliderTick.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/SliderBkg.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/panel/PanelWood.png" type="Texture" id=6]
+[ext_resource path="res://src/UI/ConfigurationLayer/Configuration.gd" type="Script" id=7]
+[ext_resource path="res://assets/art/ui/button/BttnRegresar.png" type="Texture" id=8]
+[ext_resource path="res://assets/audio/ui/button_press.wav" type="AudioStream" id=9]
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 512, 35 )
+margin_left = 20.0
+margin_right = 22.0
+
+[sub_resource type="StyleBoxTexture" id=3]
+
+[sub_resource type="StyleBoxTexture" id=2]
+
+[node name="ConfigurationLayer" type="CanvasLayer"]
+script = ExtResource( 7 )
+
+[node name="Configuration" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ConfBack" type="NinePatchRect" parent="Configuration"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -463.0
+margin_top = -269.0
+margin_right = 462.0
+margin_bottom = 269.0
+texture = ExtResource( 5 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="Label" type="Label" parent="Configuration/ConfBack"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -388.0
+margin_top = 40.0
+margin_right = 388.0
+margin_bottom = 75.0
+theme = ExtResource( 1 )
+text = "Configuración General"
+align = 1
+valign = 1
+
+[node name="SliderBack" type="NinePatchRect" parent="Configuration/ConfBack"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -399.5
+margin_top = -178.0
+margin_right = 399.5
+margin_bottom = 146.0
+texture = ExtResource( 6 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="Sliders" type="VBoxContainer" parent="Configuration/ConfBack/SliderBack"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -347.5
+margin_top = -139.0
+margin_right = 347.5
+margin_bottom = 139.0
+alignment = 1
+
+[node name="Master" type="NinePatchRect" parent="Configuration/ConfBack/SliderBack/Sliders"]
+margin_top = 15.0
+margin_right = 695.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 695, 80 )
+
+[node name="Label" type="Label" parent="Configuration/ConfBack/SliderBack/Sliders/Master"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -17.5
+margin_right = 112.0
+margin_bottom = 17.5
+theme = ExtResource( 1 )
+text = "Máster"
+align = 1
+valign = 1
+
+[node name="MasterSlider" type="HSlider" parent="Configuration/ConfBack/SliderBack/Sliders/Master"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -25.0
+margin_bottom = 25.0
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
+custom_styles/slider = SubResource( 4 )
+custom_styles/grabber_area_highlight = SubResource( 3 )
+custom_styles/grabber_area = SubResource( 2 )
+
+[node name="Music" type="NinePatchRect" parent="Configuration/ConfBack/SliderBack/Sliders"]
+margin_top = 99.0
+margin_right = 695.0
+margin_bottom = 179.0
+rect_min_size = Vector2( 695, 80 )
+
+[node name="Label" type="Label" parent="Configuration/ConfBack/SliderBack/Sliders/Music"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -17.5
+margin_right = 112.0
+margin_bottom = 17.5
+theme = ExtResource( 1 )
+text = "Música"
+align = 1
+valign = 1
+
+[node name="MusicSlider" type="HSlider" parent="Configuration/ConfBack/SliderBack/Sliders/Music"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -25.0
+margin_bottom = 25.0
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
+custom_styles/slider = SubResource( 4 )
+custom_styles/grabber_area_highlight = SubResource( 3 )
+custom_styles/grabber_area = SubResource( 2 )
+
+[node name="Fx" type="NinePatchRect" parent="Configuration/ConfBack/SliderBack/Sliders"]
+margin_top = 183.0
+margin_right = 695.0
+margin_bottom = 263.0
+rect_min_size = Vector2( 695, 80 )
+
+[node name="Label" type="Label" parent="Configuration/ConfBack/SliderBack/Sliders/Fx"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -17.5
+margin_right = 112.0
+margin_bottom = 17.5
+theme = ExtResource( 1 )
+text = "Fx"
+align = 1
+valign = 1
+
+[node name="FxSlider" type="HSlider" parent="Configuration/ConfBack/SliderBack/Sliders/Fx"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -25.0
+margin_bottom = 25.0
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
+custom_styles/slider = SubResource( 4 )
+custom_styles/grabber_area_highlight = SubResource( 3 )
+custom_styles/grabber_area = SubResource( 2 )
+
+[node name="Buttons" type="HBoxContainer" parent="Configuration/ConfBack"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -388.0
+margin_top = -104.0
+margin_right = 388.0
+margin_bottom = -40.0
+alignment = 1
+
+[node name="BttnRegresar" type="TextureButton" parent="Configuration/ConfBack/Buttons"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 2 )
+
+[node name="Container" type="Control" parent="Configuration/ConfBack/Buttons"]
+margin_left = 260.0
+margin_right = 780.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 520, 0 )
+
+[node name="ButtonFx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Fx"
+
+[connection signal="value_changed" from="Configuration/ConfBack/SliderBack/Sliders/Master/MasterSlider" to="." method="_on_MasterSlider_value_changed"]
+[connection signal="value_changed" from="Configuration/ConfBack/SliderBack/Sliders/Music/MusicSlider" to="." method="_on_MusicSlider_value_changed"]
+[connection signal="value_changed" from="Configuration/ConfBack/SliderBack/Sliders/Fx/FxSlider" to="." method="_on_FxSlider_value_changed"]
+[connection signal="pressed" from="Configuration/ConfBack/Buttons/BttnRegresar" to="." method="_on_BttnRegresar_pressed"]

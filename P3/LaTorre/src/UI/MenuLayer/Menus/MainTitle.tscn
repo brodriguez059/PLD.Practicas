@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/art/ui/button/BttnInicio.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/button/BttnSalir.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/button/BttnSalirPressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnInicioPressed.png" type="Texture" id=6]
+[ext_resource path="res://assets/art/ui/MainTitle.png" type="Texture" id=7]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=8]
+[ext_resource path="res://src/UI/MenuLayer/Menus/MainTitle.gd" type="Script" id=9]
+
+[node name="MainTitle" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+next_menu = "ProfileSelection"
+music_name = "MainTitle.wav"
+
+[node name="Title" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -278.5
+margin_top = 32.0
+margin_right = 278.5
+margin_bottom = 149.0
+rect_min_size = Vector2( 1, 0 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -159.5
+margin_top = -99.5
+margin_right = 159.5
+margin_bottom = 163.5
+texture = ExtResource( 8 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -100.0
+margin_right = 128.0
+margin_bottom = 100.0
+alignment = 1
+
+[node name="BttnInicio" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 6 )
+
+[node name="BttnConfiguracion" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_top = 68.0
+margin_right = 256.0
+margin_bottom = 132.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="BttnSalir" type="TextureButton" parent="NinePatchRect/VBoxContainer"]
+margin_top = 136.0
+margin_right = 256.0
+margin_bottom = 200.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnInicio" to="." method="_on_BttnInicio_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/BttnSalir" to="." method="_on_BttnSalir_pressed"]

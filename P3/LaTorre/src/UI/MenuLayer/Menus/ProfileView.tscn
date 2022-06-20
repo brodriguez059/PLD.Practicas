@@ -1,0 +1,357 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=3]
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=4]
+[ext_resource path="res://assets/art/ui/button/BttnRegresar.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnRegresarPressed.png" type="Texture" id=6]
+[ext_resource path="res://assets/art/ui/button/BttnJugar.png" type="Texture" id=7]
+[ext_resource path="res://assets/art/ui/panel/PanelWood.png" type="Texture" id=8]
+[ext_resource path="res://assets/art/ui/button/BttnJugarPressed.png" type="Texture" id=9]
+[ext_resource path="res://assets/art/ui/panel/PanelMarbleFlat.png" type="Texture" id=10]
+[ext_resource path="res://src/UI/MenuLayer/Menus/ProfileView.gd" type="Script" id=11]
+[ext_resource path="res://assets/theme/stats.tres" type="Theme" id=12]
+
+[node name="ProfileView" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 11 )
+next_menu = "ConfigureGame"
+prev_menu = "ProfileSelection"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -463.0
+margin_top = -269.0
+margin_right = 462.0
+margin_bottom = 269.0
+texture = ExtResource( 3 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -388.0
+margin_top = 40.0
+margin_right = 388.0
+margin_bottom = 75.0
+theme = ExtResource( 4 )
+text = "Perfil del jugador"
+align = 1
+valign = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -399.5
+margin_top = -178.0
+margin_right = 399.5
+margin_bottom = 146.0
+texture = ExtResource( 8 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NinePatchRect/NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -347.5
+margin_top = -139.0
+margin_right = 347.5
+margin_bottom = 139.0
+alignment = 1
+
+[node name="ProfileData" type="NinePatchRect" parent="NinePatchRect/NinePatchRect/HBoxContainer"]
+margin_left = 153.0
+margin_right = 345.0
+margin_bottom = 278.0
+texture = ExtResource( 10 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileData"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0
+margin_top = 23.0
+margin_right = -18.0
+margin_bottom = -23.0
+alignment = 1
+
+[node name="Nombre" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileData/VBoxContainer"]
+margin_top = 95.0
+margin_right = 156.0
+margin_bottom = 114.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nombre:"
+align = 1
+valign = 1
+
+[node name="NombreData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileData/VBoxContainer"]
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 137.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="ProfileGameStats" type="NinePatchRect" parent="NinePatchRect/NinePatchRect/HBoxContainer"]
+margin_left = 349.0
+margin_right = 541.0
+margin_bottom = 278.0
+texture = ExtResource( 10 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0
+margin_top = 23.0
+margin_right = -18.0
+margin_bottom = -23.0
+alignment = 1
+
+[node name="NPlays" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 22.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Jugadas:"
+align = 1
+valign = 1
+
+[node name="NPlaysData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 26.0
+margin_right = 156.0
+margin_bottom = 45.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NWins" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 49.0
+margin_right = 156.0
+margin_bottom = 68.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Ganadas:"
+align = 1
+valign = 1
+
+[node name="NWinsData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 72.0
+margin_right = 156.0
+margin_bottom = 91.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NLoses" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 95.0
+margin_right = 156.0
+margin_bottom = 114.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Perdidas:"
+align = 1
+valign = 1
+
+[node name="NLosesData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 137.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="RatioWL" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 141.0
+margin_right = 156.0
+margin_bottom = 160.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Ratio W/L:"
+align = 1
+valign = 1
+
+[node name="RatioWLData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 164.0
+margin_right = 156.0
+margin_bottom = 183.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NKills" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 187.0
+margin_right = 156.0
+margin_bottom = 206.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Asesinatos:"
+align = 1
+valign = 1
+
+[node name="NKillsData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileGameStats/VBoxContainer"]
+margin_top = 210.0
+margin_right = 156.0
+margin_bottom = 229.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="ProfileCollectorStats" type="NinePatchRect" parent="NinePatchRect/NinePatchRect/HBoxContainer"]
+visible = false
+margin_left = 447.0
+margin_right = 639.0
+margin_bottom = 278.0
+texture = ExtResource( 10 )
+patch_margin_left = 96
+patch_margin_top = 50
+patch_margin_right = 96
+patch_margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0
+margin_top = 23.0
+margin_right = -18.0
+margin_bottom = -23.0
+alignment = 1
+
+[node name="NObjects" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 26.0
+margin_right = 156.0
+margin_bottom = 45.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Objetos:"
+align = 1
+valign = 1
+
+[node name="NObjectsData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 49.0
+margin_right = 156.0
+margin_bottom = 68.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NEnemies" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 72.0
+margin_right = 156.0
+margin_bottom = 91.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Enemigos:"
+align = 1
+valign = 1
+
+[node name="NEnemiesData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 95.0
+margin_right = 156.0
+margin_bottom = 114.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NVendors" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 137.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Vendedores:"
+align = 1
+valign = 1
+
+[node name="NVendorsData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 141.0
+margin_right = 156.0
+margin_bottom = 160.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="NTraps" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 164.0
+margin_right = 156.0
+margin_bottom = 183.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nº Trampas:"
+align = 1
+valign = 1
+
+[node name="NTrapsData" type="Label" parent="NinePatchRect/NinePatchRect/HBoxContainer/ProfileCollectorStats/VBoxContainer"]
+margin_top = 187.0
+margin_right = 156.0
+margin_bottom = 206.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+align = 1
+valign = 1
+
+[node name="Buttons" type="HBoxContainer" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -388.0
+margin_top = -104.0
+margin_right = 388.0
+margin_bottom = -40.0
+alignment = 1
+
+[node name="BttnRegresar" type="TextureButton" parent="NinePatchRect/Buttons"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+
+[node name="BttnJugar" type="TextureButton" parent="NinePatchRect/Buttons"]
+margin_left = 260.0
+margin_right = 516.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+
+[node name="BttnConfiguracion" type="TextureButton" parent="NinePatchRect/Buttons"]
+margin_left = 520.0
+margin_right = 776.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnRegresar" to="." method="_on_BttnRegresar_pressed"]
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnJugar" to="." method="_on_BttnJugar_pressed"]
+[connection signal="pressed" from="NinePatchRect/Buttons/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]

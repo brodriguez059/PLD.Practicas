@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/slider_changed.ogg-f13b3b0b1331a0c8a369f0119be53836.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/ui/slider_changed.ogg"
+dest_files=[ "res://.import/slider_changed.ogg-f13b3b0b1331a0c8a369f0119be53836.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

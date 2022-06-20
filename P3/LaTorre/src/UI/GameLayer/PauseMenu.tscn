@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=1]
+[ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/button/BttnAbandonar.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/button/BttnAbandonarPressed.png" type="Texture" id=5]
+[ext_resource path="res://assets/art/ui/button/BttnContinuar.png" type="Texture" id=6]
+[ext_resource path="res://assets/art/ui/button/BttnContinuarPressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=8]
+[ext_resource path="res://src/UI/GameLayer/PauseMenu.gd" type="Script" id=9]
+[ext_resource path="res://src/UI/GameLayer/Components/CoinsCounter.tscn" type="PackedScene" id=10]
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.294118 )
+
+[node name="CoinsCounter" parent="ColorRect" instance=ExtResource( 10 )]
+margin_left = 40.0
+margin_top = 24.0
+margin_right = 185.0
+margin_bottom = 88.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -159.5
+margin_top = -159.0
+margin_right = 159.5
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+patch_margin_left = 96
+patch_margin_top = 96
+patch_margin_right = 96
+patch_margin_bottom = 96
+
+[node name="Label" type="Label" parent="ColorRect/NinePatchRect"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -136.5
+margin_top = 24.0
+margin_right = 136.5
+margin_bottom = 59.0
+theme = ExtResource( 1 )
+text = "Pausa"
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -128.0
+margin_top = -232.0
+margin_right = 128.0
+margin_bottom = -32.0
+alignment = 1
+
+[node name="BttnContinuar" type="TextureButton" parent="ColorRect/NinePatchRect/VBoxContainer"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+
+[node name="BttnConfiguracion" type="TextureButton" parent="ColorRect/NinePatchRect/VBoxContainer"]
+margin_top = 68.0
+margin_right = 256.0
+margin_bottom = 132.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 8 )
+
+[node name="BttnAbandonar" type="TextureButton" parent="ColorRect/NinePatchRect/VBoxContainer"]
+margin_top = 136.0
+margin_right = 256.0
+margin_bottom = 200.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+
+[connection signal="pressed" from="ColorRect/NinePatchRect/VBoxContainer/BttnContinuar" to="." method="_on_BttnContinuar_pressed"]
+[connection signal="pressed" from="ColorRect/NinePatchRect/VBoxContainer/BttnConfiguracion" to="." method="_on_BttnConfiguracion_pressed"]
+[connection signal="pressed" from="ColorRect/NinePatchRect/VBoxContainer/BttnAbandonar" to="." method="_on_BttnSalir_pressed"]

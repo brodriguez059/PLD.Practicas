@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/art/ui/button/BttnDelete.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/ui/button/BttnAddPressed.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/ui/button/BttnDeletePressed.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/ui/button/BttnAdd.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/ui/panel/PanelMarbleFlat.png" type="Texture" id=5]
+[ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=6]
+[ext_resource path="res://src/UI/MenuLayer/Components/SaveButton.gd" type="Script" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="SaveButton" type="NinePatchRect"]
+margin_right = 441.0
+margin_bottom = 90.0
+texture = ExtResource( 5 )
+patch_margin_left = 60
+patch_margin_top = 55
+patch_margin_right = 60
+patch_margin_bottom = 35
+script = ExtResource( 7 )
+
+[node name="LabelFilename" type="Label" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 32.0
+margin_top = -17.5
+margin_right = 160.0
+margin_bottom = 17.5
+theme = ExtResource( 6 )
+custom_colors/font_color = Color( 0.3192, 0.32528, 0.38, 1 )
+text = "Nombre"
+
+[node name="BttnStart" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 1 )
+
+[node name="BttnDelete" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -88.0
+margin_top = -35.0
+margin_right = -24.0
+margin_bottom = 35.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 3 )
+
+[node name="BttnAdd" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -35.0
+margin_right = 32.0
+margin_bottom = 35.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 2 )
+
+[connection signal="pressed" from="BttnStart" to="." method="_on_BttnStart_pressed"]
+[connection signal="pressed" from="BttnDelete" to="." method="_on_BttnDelete_pressed"]
+[connection signal="pressed" from="BttnAdd" to="." method="_on_BttnAdd_pressed"]
