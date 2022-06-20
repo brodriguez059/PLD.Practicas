@@ -8,8 +8,8 @@
 [ext_resource path="res://assets/art/ui/button/BttnPausePressed.png" type="Texture" id=6]
 [ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=8]
 [ext_resource path="res://assets/art/ui/panel/PanelStone.png" type="Texture" id=9]
-[ext_resource path="res://src/UI/GameLayer/GameOverlay.gd" type="Script" id=10]
-[ext_resource path="res://src/UI/GameLayer/Components/ActionableButton.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/Game/GameLayer/GameOverlay.gd" type="Script" id=10]
+[ext_resource path="res://src/Game/GameLayer/Components/ActionableButton.tscn" type="PackedScene" id=12]
 
 [node name="GameOverlay" type="Control"]
 anchor_right = 1.0

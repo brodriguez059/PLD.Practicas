@@ -1,5 +1,9 @@
 extends Node2D
 
+onready var menu_lay = $MenuLayer
+onready var conf_lay = $ConfigurationLayer
+onready var trans_lay = $TransitionLayer
+
 var current_game = null
 
 # Called when the node enters the scene tree for the first time.
@@ -29,11 +33,7 @@ func _notification(what):
 		Global.write_configuration(Global.configuration)
 		if Global.profile:
 			if Global.on_game: # Hay una partida ahora mismo
-				Global.profile.number_of_loses += 1
-				if Global.profile.number_of_loses != 0:
-					Global.profile.ratio_win_lose = float(Global.profile.number_of_wins) / float(Global.profile.number_of_loses)
-				else:
-					Global.profile.ratio_win_lose = INF
+				Global.incr_stat("number_of_loses")
 			Global.write_profile(Global.profile, Global.profile_index)
 		self.get_tree().quit()
 
@@ -64,25 +64,6 @@ func _notification(what):
 #		next_level.connect('game_won', self, '_on_game_won')
 #		Global.on_game = true
 #	return next_level
-
-#func _on_goto_scene(scene_name : String, is_ui : bool) -> void:
-#	$UIFxSound.stop()
-#	$UIFxSound.stream = sfx_button
-#	$UIFxSound.play()
-#	if $MenuLayer.get_child_count() > 0:
-#		# Remove the current level
-#		var level = $MenuLayer.get_child(0)
-#		$MenuLayer.remove_child(level)
-#		level.call_deferred("free")
-#
-#	var next_level = prepare_ui_node(is_ui, scene_name)
-#
-#	if is_ui:
-#		$MenuLayer.add_child(next_level)
-#	else:
-#		current_game = next_level
-#		self.add_child_below_node($MenuLayer, next_level)
-#
 
 	
 #func game_finished() -> void:
@@ -127,3 +108,31 @@ func _on_music_changed(music_stream):
 
 func _on_game_exited() -> void:
 	self.get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
+
+func _on_menu_changed(speed) -> void:
+	trans_lay.start_transition(speed)
+
+func _on_game_started() -> void:
+	#Instancia del juego principal
+	var next_level_resource = load("res://src/Game/GameController.tscn")
+	var next_level = next_level_resource.instance()
+	self.add_child(next_level)
+	self.move_child(next_level, 0)
+	next_level.connect("configuration_toggled", conf_lay, "toggle_configuration")
+	next_level.connect("music_changed", self, "_on_music_changed")
+	next_level.connect('game_finished', self, '_on_game_finished')
+	current_game = next_level
+	Global.on_game = true
+
+func _on_game_finished(win) -> void:
+	# Eliminamos la instancia del juego
+	self.remove_child(current_game)
+	current_game.call_deferred("free")
+	current_game = null
+
+	if win:
+		print("[Main.tscn: You win...]")
+	else:
+		print("[Main.tscn: You lose...]")
+
+	menu_lay.access_menu("ProfileView")

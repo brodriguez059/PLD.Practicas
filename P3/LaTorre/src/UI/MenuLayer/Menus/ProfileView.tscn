@@ -19,6 +19,7 @@ anchor_bottom = 1.0
 script = ExtResource( 11 )
 next_menu = "ConfigureGame"
 prev_menu = "ProfileSelection"
+music_name = "Menus.wav"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 anchor_left = 0.5

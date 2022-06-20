@@ -2,10 +2,10 @@
 
 [ext_resource path="res://assets/art/ui/button/BttnSelectPressed.png" type="Texture" id=1]
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracion.png" type="Texture" id=2]
+[ext_resource path="res://src/UI/MenuLayer/Menus/CharacterSelectionMulti.gd" type="Script" id=3]
 [ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=4]
 [ext_resource path="res://assets/art/ui/button/BttnSelect.png" type="Texture" id=5]
 [ext_resource path="res://src/UI/MenuLayer/Components/CharacterSelector.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/UI/MenuLayer/Menus/CharacterSelection.gd" type="Script" id=7]
 [ext_resource path="res://assets/art/ui/button/BttnRegresarPressed.png" type="Texture" id=8]
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=9]
 [ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=10]
@@ -15,7 +15,7 @@
 [node name="CharacterSelection" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 7 )
+script = ExtResource( 3 )
 prev_menu = "ConfigureGame"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
@@ -60,12 +60,12 @@ patch_margin_top = 96
 patch_margin_right = 96
 patch_margin_bottom = 96
 
-[node name="CharacterSelector" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
+[node name="CharacterSelectorPlayer1" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
 anchor_bottom = 1.0
 margin_left = 152.0
 margin_right = 152.0
 
-[node name="CharacterSelector2" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
+[node name="CharacterSelectorPlayer2" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0

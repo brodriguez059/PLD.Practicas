@@ -6,7 +6,7 @@ signal transition_end
 func _ready() -> void:
 	$AnimationPlayer.play("Fade_in")
 
-func start_transition(speed:int = 1):
+func start_transition(speed:float = 1.0):
 	$AnimationPlayer.playback_speed = speed
 	$AnimationPlayer.play("Fade_out")
 

@@ -28,11 +28,10 @@ onready var attack_timer = $AttackAnimation
 onready var sprite = $Sprite
 onready var sound_jump = $Jump
 onready var weapon = sprite.get_node(@"Weapon") # @ -> create/indicate NodePath
+onready var camera : Camera2D = $Camera # Static types are necessary here to avoid warnings.
 
 func _ready():
-	# Static types are necessary here to avoid warnings.
-	var camera: Camera2D = $Camera
-
+	pass
 
 # Physics process is a built-in loop in Godot.
 # If you define _physics_process on a node, Godot will call it every frame.

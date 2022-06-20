@@ -1,7 +1,7 @@
 extends Control
 
 # warning-ignore:unused_signal
-signal toggle_pause()
+signal pause_toggled()
 # warning-ignore:unused_signal
 signal death_detected()
 
@@ -17,4 +17,4 @@ func change_mana(value:float) -> void:
 	mana_bar.value = value
 
 func _on_BttnPause_pressed() -> void:
-	emit_signal("toggle_pause")
+	emit_signal("pause_toggled")

@@ -8,8 +8,8 @@
 [ext_resource path="res://assets/art/ui/button/BttnContinuar.png" type="Texture" id=6]
 [ext_resource path="res://assets/art/ui/button/BttnContinuarPressed.png" type="Texture" id=7]
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=8]
-[ext_resource path="res://src/UI/GameLayer/PauseMenu.gd" type="Script" id=9]
-[ext_resource path="res://src/UI/GameLayer/Components/CoinsCounter.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/Game/GameLayer/PauseMenu.gd" type="Script" id=9]
+[ext_resource path="res://src/Game/GameLayer/Components/CoinsCounter.tscn" type="PackedScene" id=10]
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2

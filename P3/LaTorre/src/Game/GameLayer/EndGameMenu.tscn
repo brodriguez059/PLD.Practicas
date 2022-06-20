@@ -4,9 +4,9 @@
 [ext_resource path="res://assets/art/ui/panel/PanelStone.png" type="Texture" id=2]
 [ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=3]
 [ext_resource path="res://assets/art/ui/button/BttnTerminarPressed.png" type="Texture" id=4]
-[ext_resource path="res://src/UI/GameLayer/FinishGameMenu.gd" type="Script" id=5]
+[ext_resource path="res://src/Game/GameLayer/EndGameMenu.gd" type="Script" id=5]
 
-[node name="FinishGame" type="Control"]
+[node name="EndGameMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 5 )

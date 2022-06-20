@@ -294,7 +294,8 @@ tracks/0/keys = {
 [node name="Level" type="Node2D"]
 pause_mode = 1
 script = ExtResource( 5 )
-next_music = "NivelDungeon.wav"
+music_name = "NivelDungeon.wav"
+next_level = "Level2"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

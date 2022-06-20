@@ -2,13 +2,13 @@ extends CanvasLayer
 
 # Signals
 # warning-ignore:unused_signal
+signal menu_changed(speed)
+# warning-ignore:unused_signal
 signal music_changed(music_stream)
 # warning-ignore:unused_signal
 signal configuration_toggled()
 # warning-ignore:unused_signal
 signal game_started()
-# warning-ignore:unused_signal
-signal game_finished(win)
 # warning-ignore:unused_signal
 signal game_exited()
 
@@ -17,6 +17,7 @@ const menu_path : String = "res://src/UI/MenuLayer/Menus/"
 
 # Exported variables
 export(String) var initial_menu = ""
+export(float, 0.1, 1.0) var transition_speed = 0.35
 
 # State variables
 var current_menu = null
@@ -61,16 +62,14 @@ func prepare_menu(menu_name : String):
 	level_instance.connect("button_fx_played", self, "_on_button_fx_played")
 	return level_instance
 
-# UI signal handlers
-func _on_button_fx_played() -> void:
-	play_button_sound()
-
-# Next menu + Prev menu
-func _on_menu_accessed(menu_name) -> void:
+func access_menu(menu_name : String) -> void:
 	# Remove the menu
-	var menu = self.get_child(0)
-	self.remove_child(menu)
-	menu.call_deferred("free")
+	emit_signal("menu_changed", 1.0/transition_speed)
+	yield(get_tree().create_timer(transition_speed), "timeout")
+	if self.get_child_count() > 1: # Como mínimo está el ButtonFx
+		var menu = self.get_child(0)
+		self.remove_child(menu)
+		menu.call_deferred("free")
 
 	# Add the new menu
 	current_menu = prepare_menu(menu_name)
@@ -78,29 +77,26 @@ func _on_menu_accessed(menu_name) -> void:
 	self.move_child(current_menu, 0)
 	emit_signal("music_changed", current_menu.music_name)
 
+# UI signal handlers
+func _on_button_fx_played() -> void:
+	play_button_sound()
+
+# Next menu + Prev menu
+func _on_menu_accessed(menu_name) -> void:
+	access_menu(menu_name)
+
 # Signals to propagate
 func _on_configuration_toggled() -> void:
 	emit_signal("configuration_toggled")
 
 func _on_game_started() -> void:
+	# Eliminamos la instancia del menú
+	var menu = self.get_child(0)
+	self.remove_child(menu)
+	menu.call_deferred("free")
+	# Emitimos la señal de que empieza el juego
 	emit_signal("game_started")
 
 func _on_game_exited() -> void:
 	play_button_sound()
 	emit_signal("game_exited")
-
-#func next_menu(scene_name : String) -> void:
-#	# Add the next interface or the main game instance
-#	var scene_path : String = menu_path + scene_name + ".tscn"
-#	var next_level_resource
-#	next_level_resource = load(scene_path)
-#	var next_level
-#	next_level = next_level_resource.instance()
-#
-#	# Apply the menu connections
-#	next_level.connect('goto_next_scene', self, '_on_goto_scene')
-#	next_level.connect('goto_prev_scene', self, '_on_goto_scene')
-#	next_level.connect('toggle_configuration', self, '_on_toggle_configuration')
-#	next_level.connect('exit_game', self, '_on_exit_emitted')
-#	if next_level.music != null:
-#		SoundHandler.set_music_stream(next_level.music)

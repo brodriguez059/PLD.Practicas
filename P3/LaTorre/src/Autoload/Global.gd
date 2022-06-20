@@ -74,6 +74,18 @@ func delete_profile(index):
 	var path = save_path + ("profile%d.res" % index)
 	dir.remove(path)
 
+func incr_stat(stat_name : String) -> void:
+	match(stat_name):
+		"number_of_plays":
+			Global.profile.number_of_plays += 1
+		"number_of_loses":
+			Global.profile.number_of_loses += 1
+		"number_of_wins":
+			Global.profile.number_of_wins += 1
+	if stat_name == "number_of_loses" or stat_name == "number_of_wins":
+		# When dividing by 0, it gets set to +INF
+		Global.profile.ratio_win_lose = float(Global.profile.number_of_wins) / float(Global.profile.number_of_loses)
+
 # Game play/partida information
 func set_play(pl_data : Play_Game_Data) -> void:
 	play_data = pl_data

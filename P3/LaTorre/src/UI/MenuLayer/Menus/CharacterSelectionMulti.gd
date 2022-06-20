@@ -1,5 +1,8 @@
 extends GameMenu
 
+onready var player1_selector = $NinePatchRect/NinePatchRect/CharacterSelectorPlayer1
+onready var player2_selector = $NinePatchRect/NinePatchRect/CharacterSelectorPlayer2
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -7,25 +10,13 @@ func _ready() -> void:
 
 func _on_BttnSelect_pressed() -> void:
 	emit_signal("button_fx_played")
-	# ESTA ES UNA DE LAS FUNCIONES MÁS IMPORTANTES DE TU JUEGO
-	# DESDE AQUÍ SE VA A LA PARTIDA DE VERDAD
-	print("Empieza la partida")
-	print("Esperando a los demás jugadores...")
-	Global.profile.number_of_plays += 1
+	var player1_data = player1_selector.get_character()
+	Global.play_data.player1_character_class = player1_data["class"]
+	var player2_data = player2_selector.get_character()
+	Global.play_data.player2_character_class = player2_data["class"]
 	emit_signal("game_started")
 
-
-# Character selection
-
-func _on_BttnNext_pressed() -> void:
-	pass
-
-func _on_BttnPrev_pressed() -> void:
-	pass
-
-
 # UI signals emitters
-
 func _on_BttnRegresar_pressed() -> void:
 	emit_signal("button_fx_played")
 	Global.clear_play()

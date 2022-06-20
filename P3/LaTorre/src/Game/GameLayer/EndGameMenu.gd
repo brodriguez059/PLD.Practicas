@@ -3,7 +3,7 @@ extends Control
 export(bool) var win_condition = false
 
 # warning-ignore:unused_signal
-signal finish_game(win)
+signal game_exited(win)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,4 +19,4 @@ func change_type(win : bool) -> void:
 	show()
 
 func _on_BttnAbandonar_pressed() -> void:
-	emit_signal("finish_game", win_condition)
+	emit_signal("game_exited", win_condition)

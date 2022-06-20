@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/theme/user_interface.tres" type="Theme" id=4]
 [ext_resource path="res://assets/art/ui/button/BttnSelect.png" type="Texture" id=5]
 [ext_resource path="res://src/UI/MenuLayer/Components/CharacterSelector.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/UI/MenuLayer/Menus/CharacterSelection.gd" type="Script" id=7]
+[ext_resource path="res://src/UI/MenuLayer/Menus/CharacterSelectionSingle.gd" type="Script" id=7]
 [ext_resource path="res://assets/art/ui/button/BttnRegresarPressed.png" type="Texture" id=8]
 [ext_resource path="res://assets/art/ui/button/BttnConfiguracionPressed.png" type="Texture" id=9]
 [ext_resource path="res://assets/art/ui/panel/PanelLimestone.png" type="Texture" id=10]
@@ -62,7 +62,7 @@ patch_margin_top = 96
 patch_margin_right = 96
 patch_margin_bottom = 96
 
-[node name="CharacterSelector" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
+[node name="CharacterSelectorPlayer" parent="NinePatchRect/NinePatchRect" instance=ExtResource( 6 )]
 anchor_bottom = 1.0
 margin_left = 152.0
 margin_right = 152.0
