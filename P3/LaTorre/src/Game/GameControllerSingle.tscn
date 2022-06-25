@@ -1,21 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Game/GameLayer/PauseMenu.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/Game/GameController.gd" type="Script" id=2]
-[ext_resource path="res://src/Actors/Characters/Mage.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Game/GameControllerSingle.gd" type="Script" id=2]
 [ext_resource path="res://src/Game/GameLayer/GameOverlay.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Game/GameLayer/EndGameMenu.tscn" type="PackedScene" id=6]
 
 [node name="Game" type="Node"]
 script = ExtResource( 2 )
-
-[node name="LevelContainer1" type="Node2D" parent="."]
-
-[node name="LevelContainer2" type="Node2D" parent="."]
-position = Vector2( 2650, 0 )
-
-[node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 114, 851 )
+initial_level = "LevelDebug"
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 layer = 8
@@ -29,6 +21,6 @@ pause_mode = 2
 
 [connection signal="pause_toggled" from="InterfaceLayer/GameOverlay" to="." method="_on_pause_toggled"]
 [connection signal="configuration_toggled" from="InterfaceLayer/PauseMenu" to="." method="_on_PauseMenu_configuration_toggled"]
-[connection signal="game_abandoned" from="InterfaceLayer/PauseMenu" to="." method="_on_PauseMenu_game_abandoned"]
+[connection signal="game_abandoned" from="InterfaceLayer/PauseMenu" to="." method="_on_game_lost"]
 [connection signal="pause_toggled" from="InterfaceLayer/PauseMenu" to="." method="_on_pause_toggled"]
 [connection signal="game_exited" from="InterfaceLayer/EndGameMenu" to="." method="_on_EndGameMenu_game_exited"]

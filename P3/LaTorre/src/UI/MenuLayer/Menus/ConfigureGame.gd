@@ -5,7 +5,13 @@ onready var difficulty_selector : OptionButton = $NinePatchRect/NinePatchRect/VB
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	mode_selector.select(1)
+	if Global.play_data != null:
+		mode_selector.select(Global.play_data.play_mode)
+		difficulty_selector.select(Global.play_data.play_difficulty)
+	else:
+		mode_selector.select(0) # Multiplayer by default
+		difficulty_selector.select(0)
+	
 
 func _on_BttnRegresar_pressed() -> void:
 	emit_signal("button_fx_played")

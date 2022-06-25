@@ -31,7 +31,13 @@ onready var weapon = sprite.get_node(@"Weapon") # @ -> create/indicate NodePath
 onready var camera : Camera2D = $Camera # Static types are necessary here to avoid warnings.
 
 func _ready():
-	pass
+	if player_code == "":
+		$Label.hide()
+	else:
+		set_label(player_code)
+	
+func set_label(text):
+	$Label.text = text
 
 # Physics process is a built-in loop in Godot.
 # If you define _physics_process on a node, Godot will call it every frame.
@@ -52,11 +58,10 @@ func _ready():
 # - If you split the character into a state machine or more advanced pattern,
 #   you can easily move individual functions.
 func _physics_process(_delta):
-
 	# Play jump sound
 	if Input.is_action_just_pressed("jump" + player_code) and is_on_floor():
 		sound_jump.play()
-
+	
 	var direction = get_direction()
 
 	var is_jump_interrupted = Input.is_action_just_released("jump" + player_code) and _velocity.y < 0.0
@@ -140,12 +145,27 @@ func get_new_animation(is_shooting = false):
 		animation_new += "_weapon"
 	return animation_new
 
-# Signal emitters
+# UI signal connections
 
-func die() -> void:
+func instadie() -> void:
 	health = 0.0
+	mana = 0.0
 	$AnimationPlayer.play("death")
+	emit_signal("health_changed", health)
+	emit_signal("mana_changed", mana)
 	emit_signal("player_died")
+
+func receive_damage(damage_value : float) -> void:
+	health -= damage_value
+	emit_signal("health_changed", health)
+	if health <= 0:
+		emit_signal("player_died")
+
+func use_hability(index : int) -> void:
+	emit_signal("mana_changed", mana)
+
+func use_object(index : int) -> void:
+	emit_signal("mana_changed", mana)
 
 func collect_coin():
 	coins += 1

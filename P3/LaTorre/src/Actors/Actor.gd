@@ -12,7 +12,7 @@ onready var gravity = ProjectSettings.get("physics/2d/default_gravity")
 # Static on runtime
 export(float, 0, 100) var max_health = 100.0
 export(float, 0, 100) var max_mana = 100.0
-export(Vector2) var speed = Vector2(150.0, 350.0) # This is max movement speed
+export(Vector2) var speed = Vector2(150.0, 400.0) # This is max movement speed
 export(float, 0, 100) var max_defense = 10.0
 export(float, 0, 100) var max_power = 10.0
 

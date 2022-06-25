@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/art/player/Mage.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Characters/Character.gd" type="Script" id=2]
 [ext_resource path="res://assets/audio/sfx/jump.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/audio/sfx/shoot.wav" type="AudioStream" id=4]
 [ext_resource path="res://src/Actors/Characters/Components/Weapon.gd" type="Script" id=5]
+[ext_resource path="res://assets/theme/stats.tres" type="Theme" id=6]
 
 [sub_resource type="Animation" id=13]
 length = 0.001
@@ -276,3 +277,16 @@ shape = SubResource( 11 )
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 bus = "Fx"
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -14.0
+margin_top = -48.0
+margin_right = 14.0
+margin_bottom = -29.0
+theme = ExtResource( 6 )
+custom_colors/font_color = Color( 0.337255, 0.52549, 0.827451, 1 )
+text = "P1"
+align = 1
+valign = 1

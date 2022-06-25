@@ -37,70 +37,7 @@ func _notification(what):
 			Global.write_profile(Global.profile, Global.profile_index)
 		self.get_tree().quit()
 
-#func prepare_ui_node(is_ui : bool, scene_name : String):
-#	# Add the next interface or the main game instance
-#	var scene_path : String
-#	var next_level_resource
-#	var next_level
-#	if is_ui: # The next step is an interface
-#		scene_path = menu_path + scene_name + ".tscn"
-#		next_level_resource = load(scene_path)
-#		next_level = next_level_resource.instance()
-#		next_level.connect('goto_next_scene', self, '_on_goto_scene')
-#		next_level.connect('goto_prev_scene', self, '_on_goto_scene')
-#		next_level.connect('toggle_configuration', self, '_on_toggle_configuration')
-#		next_level.connect('exit_game', self, '_on_exit_emitted')
-#		Global.on_game = false
-#		if next_level.new_music != "":
-#			SoundHandler.change_music(next_level.new_music)
-#	else: # THe next step is the main game
-#		# Instancia del juego principal
-#		scene_path = scene_name + ".tscn"
-#		next_level_resource = load(scene_path)
-#		next_level = next_level_resource.instance()
-#		next_level.connect('toggle_configuration', self, '_on_toggle_configuration')
-#		next_level.connect('toggle_pause', self, '_on_toggle_pause')
-#		next_level.connect('game_lost', self, '_on_game_lost')
-#		next_level.connect('game_won', self, '_on_game_won')
-#		Global.on_game = true
-#	return next_level
-
-	
-#func game_finished() -> void:
-#	if $MenuLayer.get_child_count() > 0:
-#		# Remove the current game
-#		var level = $MenuLayer.get_child(0)
-#		$MenuLayer.remove_child(level)
-#		level.call_deferred("free")
-#
-#	# Remove the game
-#	self.remove_child(current_game)
-#	current_game.call_deferred("free")
-#	current_game = null
-#
-#	# Go to the profile view
-#	var scene_path = menu_path + "ProfileView.tscn"
-#	var next_level_resource = load(scene_path)
-#	var next_level = next_level_resource.instance()
-#	next_level.connect('goto_next_scene', self, '_on_goto_scene')
-#	next_level.connect('goto_prev_scene', self, '_on_goto_scene')
-#	next_level.connect('toggle_configuration', self, '_on_toggle_configuration')
-#	next_level.connect('exit_game', self, '_on_exit_emitted')
-#	Global.on_game = false
-#	SoundHandler.change_music("Menus.wav")
-#	$MenuLayer.add_child(next_level)
-
 # Signal handlers
-
-# Play game signals
-
-#func _on_game_lost() -> void:
-#	print("[Main.tscn: You lose...]")
-#	game_finished()
-#
-#func _on_game_won() -> void:
-#	print("[Main.tscn: You win...]")
-#	game_finished()
 
 # Menu Layer signals
 func _on_music_changed(music_stream):
@@ -114,7 +51,12 @@ func _on_menu_changed(speed) -> void:
 
 func _on_game_started() -> void:
 	#Instancia del juego principal
-	var next_level_resource = load("res://src/Game/GameController.tscn")
+	var next_level_resource_path = "res://src/Game/GameController"
+	if Global.play_data.play_mode == 1:
+		next_level_resource_path += "Multi.tscn"
+	else:
+		next_level_resource_path += "Single.tscn"
+	var next_level_resource = load(next_level_resource_path)
 	var next_level = next_level_resource.instance()
 	self.add_child(next_level)
 	self.move_child(next_level, 0)
@@ -123,6 +65,8 @@ func _on_game_started() -> void:
 	next_level.connect('game_finished', self, '_on_game_finished')
 	current_game = next_level
 	Global.on_game = true
+	
+	next_level.force_music_change() # <- Needs to be done like this to force the new music
 
 func _on_game_finished(win) -> void:
 	# Eliminamos la instancia del juego
@@ -131,8 +75,8 @@ func _on_game_finished(win) -> void:
 	current_game = null
 
 	if win:
-		print("[Main.tscn: You win...]")
+		print("[Main.tscn:_on_game_finished -> You win...]")
 	else:
-		print("[Main.tscn: You lose...]")
+		print("[Main.tscn:_on_game_finished -> You lose...]")
 
 	menu_lay.access_menu("ProfileView")

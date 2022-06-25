@@ -63,6 +63,9 @@ continuous_cd = 2
 contacts_reported = 1
 contact_monitor = true
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Particles2D" type="CPUParticles2D" parent="."]
 material = SubResource( 2 )

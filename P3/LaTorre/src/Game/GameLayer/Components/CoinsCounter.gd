@@ -17,3 +17,8 @@ func _ready():
 #	else:
 #		var _player_path = get_node(@"../../../../Level/Player")
 #		_player_path.connect("collect_coin", self, "_collect_coin")
+
+
+func set_coins(value: int) -> void:
+	coins_collected = value
+	coins_label.set_text(str(coins_collected))
